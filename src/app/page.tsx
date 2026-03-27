@@ -1,12 +1,12 @@
-import Image from "next/image";
+import Header from "@/components/layout/Header";
 
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="text-3xl font-bold underline font-serif">Hello world!</h1>
-      <h4 className="text-lg font-sans text-gray-600">
-        Welcome to my portfolio!
-      </h4>
+    <div className="flex flex-col h-screen w-screen bg-gray-200">
+      <Header />
+      <main>
+          {/* Conteúdo Principal */}
+      </main>
     </div>
   );
 }
