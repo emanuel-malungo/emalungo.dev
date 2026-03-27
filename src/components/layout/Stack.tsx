@@ -47,7 +47,7 @@ export default function StackSection() {
 
     return (
         <section id="stack" className="w-full">
-            <div className="flex flex-col gap-12 sm:gap-16">
+            <div className="flex flex-col gap-10 sm:gap-16">
                 {/* Section Header */}
                 <div className="space-y-4 max-w-2xl mx-auto text-center">
                     <h3 className="text-sm sm:text-base text-accent font-medium tracking-[0.2em] uppercase">Minha Stack</h3>
@@ -58,27 +58,27 @@ export default function StackSection() {
                 </div>
 
                 {/* Tech Categories Grid */}
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-12 sm:gap-16">
                     {categories.map((category, catIdx) => (
                         <div key={catIdx} className="space-y-6">
                             <div className="flex items-center gap-4">
-                                <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 whitespace-nowrap">{category.name}</span>
+                                <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest text-gray-400 whitespace-nowrap">{category.name}</span>
                                 <div className="h-px bg-gray-100 flex-1"></div>
                             </div>
                             
-                            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6">
+                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex lg:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 md:gap-6">
                                 {category.skills.map((skill, skillIdx) => (
                                     <div 
                                         key={skillIdx}
-                                        className="group relative flex items-center gap-3 px-4 py-3 bg-white border border-gray-100/80 rounded-2xl shadow-sm transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1 cursor-default"
+                                        className="group relative flex items-center justify-start sm:justify-center lg:justify-start gap-2.5 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-gray-100/80 rounded-xl sm:rounded-2xl shadow-sm transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1 cursor-default"
                                     >
-                                        <div className="text-2xl transition-transform duration-300 group-hover:scale-110">
+                                        <div className="text-xl sm:text-2xl transition-transform duration-300 group-hover:scale-110 shrink-0">
                                             {skill.icon}
                                         </div>
-                                        <span className="text-sm font-medium text-gray-700 group-hover:text-black transition-colors">{skill.name}</span>
+                                        <span className="text-xs sm:text-sm font-medium text-gray-700 group-hover:text-black transition-colors whitespace-nowrap overflow-hidden text-ellipsis">{skill.name}</span>
                                         
                                         {/* Subtle background glow on hover */}
-                                        <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity pointer-events-none"></div>
+                                        <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 rounded-xl sm:rounded-2xl transition-opacity pointer-events-none"></div>
                                     </div>
                                 ))}
                             </div>
@@ -87,12 +87,12 @@ export default function StackSection() {
                 </div>
 
                 {/* Footer Insight */}
-                <div className="mt-8 p-6 bg-gray-100/50 border border-black/5 rounded-3xl flex items-center gap-4 group transition-colors hover:bg-white hover:border-accent/20">
-                    <div className="w-12 h-12 rounded-2xl bg-black flex items-center justify-center text-white shrink-0 group-hover:bg-accent transition-colors">
-                        <FaCode size={20} />
+                <div className="mt-4 p-5 sm:p-6 bg-gray-50/50 border border-black/5 rounded-2xl sm:rounded-3xl flex items-center gap-4 group transition-colors hover:bg-white hover:border-accent/20">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-black flex items-center justify-center text-white shrink-0 group-hover:bg-accent transition-colors">
+                        <FaCode size={18} className="sm:size-[20px]" />
                     </div>
                     <div>
-                        <p className="text-sm text-gray-500 font-sans italic leading-tight">
+                        <p className="text-xs sm:text-sm text-gray-500 font-sans italic leading-tight">
                             "Constantemente expandindo meu conhecimento em novas arquiteturas e paradigmas de desenvolvimento."
                         </p>
                     </div>
