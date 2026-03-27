@@ -7,7 +7,7 @@ import {
     FaBrain 
 } from "react-icons/fa";
 
-export default function SkillsSection() {
+export default function SoftSkills() {
     const skills = [
         {
             title: "Comunicação Eficaz",
@@ -48,15 +48,15 @@ export default function SkillsSection() {
     ];
 
     return (
-        <section className="w-full">
+        <section id="skills" className="w-full py-20 lg:py-32">
             <div className="flex flex-col gap-12 sm:gap-16">
                 {/* Section Header */}
-                <div className="space-y-4 max-w-2xl mx-auto text-center">
+                <div className="space-y-4 max-w-xl">
                     <h3 className="text-sm sm:text-base text-accent font-medium tracking-[0.2em] uppercase">Minhas Competências</h3>
                     <h2 className="text-4xl sm:text-5xl font-serif font-bold tracking-tighter text-black leading-tight">
                         Soft Skills & <span className="text-accent/90">Interpessoais</span>
                     </h2>
-                    <div className="w-20 h-1 bg-black mx-auto mt-6 opacity-10"></div>
+                    <div className="w-20 h-1 bg-black mt-6 opacity-10"></div>
                 </div>
 
                 {/* Skills Grid */}
@@ -83,7 +83,7 @@ export default function SkillsSection() {
                                 </p>
                             </div>
 
-                            {/* Decorative Corner Icon */}
+                            {/* Decorative Corner */}
                             <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-x-1 -translate-y-1">
                                 <div className="w-2 h-2 rounded-full bg-accent/20"></div>
                             </div>
