@@ -84,20 +84,20 @@ export default function PortfolioSection() {
                             </div>
 
                             {/* Content */}
-                            <div className="p-8 space-y-4">
-                                <h4 className="text-2xl font-serif font-bold text-black group-hover:text-accent transition-colors duration-300">
+                            <div className="p-5 sm:p-8 space-y-3 sm:y-4">
+                                <h4 className="text-xl sm:text-2xl font-serif font-bold text-black group-hover:text-accent transition-colors duration-300">
                                     {project.title}
                                 </h4>
-                                <p className="text-gray-500 leading-relaxed text-base sm:text-lg font-sans font-light line-clamp-2">
+                                <p className="text-gray-500 leading-relaxed text-sm sm:text-lg font-sans font-light line-clamp-2">
                                     {project.description}
                                 </p>
 
                                 {/* Tech Stack Tags */}
-                                <div className="flex flex-wrap gap-2 pt-2">
+                                <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1 sm:pt-2">
                                     {project.tech.map((tag, tIdx) => (
                                         <span 
                                             key={tIdx}
-                                            className="text-[10px] sm:text-xs font-bold text-gray-400 border border-gray-100 px-2 py-0.5 rounded-sm bg-gray-50 group-hover:border-accent/20 group-hover:bg-accent/5 transition-colors"
+                                            className="text-[9px] sm:text-[10px] md:text-xs font-bold text-gray-400 border border-gray-100 px-2 py-0.5 rounded-sm bg-gray-50 group-hover:border-accent/20 group-hover:bg-accent/5 transition-colors"
                                         >
                                             {tag}
                                         </span>
@@ -106,9 +106,9 @@ export default function PortfolioSection() {
                             </div>
 
                             {/* Corner Interactive Hint */}
-                            <div className="absolute bottom-0 right-0 p-4 translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500">
-                                <div className="p-2 bg-accent/10 rounded-tl-2xl">
-                                    <FaCode className="text-accent" />
+                            <div className="absolute bottom-0 right-0 p-3 sm:p-4 translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500">
+                                <div className="p-1.5 sm:p-2 bg-accent/10 rounded-tl-2xl">
+                                    <FaCode className="text-accent size-3 sm:size-4" />
                                 </div>
                             </div>
                         </div>
@@ -116,8 +116,8 @@ export default function PortfolioSection() {
                 </div>
 
                 {/* Footer Insight */}
-                <div className="mt-12 text-center">
-                    <button className="group relative px-8 py-4 bg-black text-white rounded-full font-bold overflow-hidden shadow-xl hover:shadow-black/20 transition-all active:scale-95 flex items-center gap-3 mx-auto">
+                <div className="mt-8 sm:mt-12 text-center">
+                    <button className="group relative px-6 sm:px-8 py-3.5 sm:py-4 bg-black text-white rounded-full text-sm sm:text-base font-bold overflow-hidden shadow-xl hover:shadow-black/20 transition-all active:scale-95 flex items-center gap-3 mx-auto">
                         <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                         <span className="relative">Ver Todos Projectos</span>
                         <FaExternalLinkAlt className="relative text-xs group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

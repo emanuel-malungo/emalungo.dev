@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaSun } from "react-icons/fa";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,6 +49,11 @@ export default function Header() {
                                 EN
                             </button>
                         </div>
+
+                        {/* Theme Toggle Placeholder */}
+                        <button className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:text-accent hover:border-accent/40 hover:shadow-sm transition-all cursor-pointer">
+                            <FaSun size={18} className="sm:size-[20px]" />
+                        </button>
 
                         {/* Mobile Hamburger Button */}
                         <button 
