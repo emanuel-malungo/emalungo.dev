@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="border-b border-gray-300">
-            <nav className="mx-auto px-4 py-4 md:max-w-7xl md:px-8 md:border-x md:border-gray-300 flex items-center justify-between">
+        <header className="border-b border-gray-200/60">
+            <nav className="mx-auto px-4 py-4 md:max-w-7xl md:px-8 md:border-x md:border-gray-200/60 flex items-center justify-between">
                 <div className="flex items-center gap-12">
                     <Link href="/" className="text-2xl font-serif font-bold tracking-tighter">
                         Emalungo Dev<span className="text-[--accent]">.</span>

@@ -1,9 +1,9 @@
 
 export default function Footer() {
     return (
-        <footer className="border-t border-gray-200 bg-white">
-            <div className="mx-auto px-4 py-8 md:max-w-7xl md:px-8 md:border-x md:border-gray-200">
-                <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <footer className="border-t border-gray-200/60 bg-white">
+            <div className="mx-auto px-4 py-8 md:max-w-7xl md:px-8 md:border-x md:border-gray-200/60">
+                <div className="flex  md:flex-row justify-between items-center gap-8">
                     {/* Left Section - Info */}
                     <div className="md:text-left">
                         <p className="text-xs text-gray-600">Frontend Developer & UI/UX Enthusiast</p>
