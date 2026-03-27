@@ -6,7 +6,7 @@ export default function MainContent() {
             <div className="space-y-4">
                 <div className="space-y-2">
                     <h3 className="text-sm sm:text-base text-accent font-medium tracking-[0.2em] uppercase">Hello, I'm</h3>
-                    <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif font-bold tracking-tighter text-black leading-[1.1]">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tighter text-black leading-[1.1]">
                         Emanuel 
                         <span className="text-accent/90"> Malungo</span>
                     </h1>
@@ -21,7 +21,7 @@ export default function MainContent() {
                 Crafting immersive digital experiences through clean code and artistic design. Specializing in <span className="text-black font-medium">React, Next.js</span>, and high-performance web applications that bridge functionality with aesthetic excellence.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8">
                 <button className="group relative px-6 py-3 bg-black text-white rounded-full font-bold overflow-hidden shadow-xl hover:shadow-black/20 transition-all active:scale-95 flex items-center gap-3 text-sm w-full sm:w-auto justify-center">
                     <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                     <div className="relative w-7 h-7 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-black/20">

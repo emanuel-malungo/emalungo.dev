@@ -65,7 +65,7 @@ export default function Header() {
 
             {/* Mobile Menu Overlay - Moved OUTSIDE the fixed header element to avoid clipping */}
             <div 
-                className={`fixed inset-0 bg-black/50 backdrop-blur-md z-[100] transition-opacity duration-300 md:hidden ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+                className={`fixed inset-0 bg-black/50 backdrop-blur-md z-100 transition-opacity duration-300 md:hidden ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
                 onClick={toggleMenu}
             >
                 {/* Mobile Menu Drawer */}
