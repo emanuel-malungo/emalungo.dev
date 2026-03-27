@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* ===========================
+   Configuração do Tema
+=========================== */
+
+@theme {
+	/* Fontes */
+	--font-family-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+	--font-family-serif: var(--font-playfair), Georgia, serif;
+
+	/* Cores customizadas */
+	--color-primary: #FFFBF5;
+	--color-black: #0F0F0F;
+	--color-gray-100: #F5F5F5;
+	--color-gray-300: #D1D1D1;
+	--color-gray-600: #6B6B6B;
+	--color-accent: #C6A75E;
+}
+
+/* ===========================
+   Paleta de Cores Oficial
+=========================== */
+
+:root {
+	/* Cor de Fundo (Base) */
+	--bg-primary: #FFFBF5;
+
+	/* Cor Principal (Preto) */
+	--color-black: #0F0F0F;
+
+	/* Tons de Apoio (Neutros) */
+	--gray-100: #F5F5F5;
+	--gray-300: #D1D1D1;
+	--gray-600: #6B6B6B;
+
+	/* Cor de Destaque (Opcional e discreta) */
+	--accent: #C6A75E;
+
+	/* Fontes */
+	--font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+	--font-serif: var(--font-playfair), Georgia, serif;
+}
+
