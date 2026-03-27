@@ -13,7 +13,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="w-full bg-white border-t border-gray-100 mt-20">
+        <footer className="w-full bg-white border-t border-gray-100">
             <div className="mx-auto px-6 sm:px-10 lg:px-16 py-16 lg:max-w-7xl lg:border-x lg:border-black/5">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20">
                     

@@ -33,7 +33,7 @@ export default function Home() {
                 <StackSection />
             </section>
 
-            <section id="portfolio" className="w-full py-16 sm:py-24 lg:py-32 border-b border-gray-100">
+            <section id="portfolio" className="w-full py-16 sm:py-24 lg:py-32 border-gray-100">
                 <PortfolioSection />
             </section>
 
