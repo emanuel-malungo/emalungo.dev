@@ -6,7 +6,6 @@ import AboutSection from "@/components/layout/About";
 import SkillsSection from "@/components/layout/Skills";
 import StackSection from "@/components/layout/Stack";
 import PortfolioSection from "@/components/layout/Portfolio";
-import CreativeSection from "@/components/layout/Creative";
 
 export default function Home() {
   return (
@@ -22,25 +21,22 @@ export default function Home() {
 
         {/* Sections rendered sequentially */}
         <div className="w-full flex flex-col items-center">
-            <section id="about" className="w-full py-12 md:py-16 lg:py-24 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <section id="about" className="w-full py-16 sm:py-24 lg:py-32 border-b border-gray-100 animate-in fade-in slide-in-from-bottom-4 duration-700">
                 <AboutSection />
             </section>
 
-            <section id="skills" className="w-full py-12 md:py-16 lg:py-24">
+            <section id="skills" className="w-full py-16 sm:py-24 lg:py-32 border-b border-gray-100">
                 <SkillsSection />
             </section>
 
-            <section id="stack" className="w-full py-12 md:py-16 lg:py-24">
+            <section id="stack" className="w-full py-16 sm:py-24 lg:py-32 border-b border-gray-100">
                 <StackSection />
             </section>
 
-            <section id="portfolio" className="w-full py-12 md:py-16 lg:py-24">
+            <section id="portfolio" className="w-full py-16 sm:py-24 lg:py-32 border-b border-gray-100">
                 <PortfolioSection />
             </section>
 
-            <section id="creative" className="w-full py-12 md:py-16 lg:py-24">
-                <CreativeSection />
-            </section>
         </div>
       </main>
 

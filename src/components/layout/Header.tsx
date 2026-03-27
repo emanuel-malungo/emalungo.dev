@@ -12,7 +12,6 @@ export default function Header() {
         { id: "skills", label: "Soft Skills" },
         { id: "stack", label: "Hard Skills" },
         { id: "portfolio", label: "Projectos" },
-        { id: "creative", label: "Creative" },
     ];
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);

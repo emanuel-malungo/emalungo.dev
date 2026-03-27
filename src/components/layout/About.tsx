@@ -4,7 +4,7 @@ import MainContent from "./About/MainContent";
 
 export default function AboutSection() {
     return (
-        <section id="about" className="w-full pb-12 sm:pb-20 flex flex-col items-center">
+        <section id="about" className="w-full flex items-center">
             <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-12 lg:gap-16 w-full">
                 {/* Main Hero Content - Left Column (Appears second on mobile) */}
                 <MainContent />

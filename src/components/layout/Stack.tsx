@@ -46,7 +46,7 @@ export default function StackSection() {
     ];
 
     return (
-        <section id="stack" className="w-full py-20 lg:py-32">
+        <section id="stack" className="w-full">
             <div className="flex flex-col gap-12 sm:gap-16">
                 {/* Section Header */}
                 <div className="space-y-4 max-w-2xl mx-auto text-center">
