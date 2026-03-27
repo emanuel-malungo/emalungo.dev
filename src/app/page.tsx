@@ -1,110 +1,50 @@
 "use client";
 
-import { useState } from "react";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import NavItem from "@/components/common/NavItem";
 import AboutSection from "@/components/layout/About";
 import SkillsSection from "@/components/layout/Skills";
 import StackSection from "@/components/layout/Stack";
 import PortfolioSection from "@/components/layout/Portfolio";
 import CreativeSection from "@/components/layout/Creative";
-import { FaCode, FaPalette, FaUser, FaBrain, FaFolderOpen } from "react-icons/fa";
-
-const SECTIONS = {
-  about: <AboutSection />,
-  skills: <SkillsSection />,
-  stack: <StackSection />,
-  portfolio: <PortfolioSection />,
-  creative: <CreativeSection />,
-};
-
-type SectionId = keyof typeof SECTIONS;
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState<SectionId>("about");
-  const [isScrolling, setIsScrolling] = useState(false);
-
-  const sectionIds: SectionId[] = ["about", "skills", "stack", "portfolio", "creative"];
-
-  const handleWheel = (e: React.WheelEvent | WheelEvent) => {
-    if (isScrolling) return;
-
-    const currentIndex = sectionIds.indexOf(activeSection);
-    if (e.deltaY > 50 && currentIndex < sectionIds.length - 1) {
-      // Scroll Down
-      setIsScrolling(true);
-      setActiveSection(sectionIds[currentIndex + 1]);
-      setTimeout(() => setIsScrolling(false), 1000);
-    } else if (e.deltaY < -50 && currentIndex > 0) {
-      // Scroll Up
-      setIsScrolling(true);
-      setActiveSection(sectionIds[currentIndex - 1]);
-      setTimeout(() => setIsScrolling(false), 1000);
-    }
-  };
-
   return (
-    <div
-      className="flex flex-col w-screen min-h-screen bg-linear-to-br from-primary via-cream to-gray-100"
-      onWheel={handleWheel}
-    >
-      <Header activeSection={activeSection} onSectionChange={setActiveSection} />
+    <div className="flex flex-col w-full min-h-screen overflow-x-hidden">
+      <Header />
 
-      <main className="flex-1 mx-auto w-full lg:max-w-7xl lg:border-x lg:border-black/5 relative flex flex-col px-2 sm:px-4 md:px-6">
+      <main className="flex-1 mx-auto w-full lg:max-w-7xl lg:border-x lg:border-black/5 relative flex flex-col px-2 sm:px-4 md:px-6 pt-16 md:pt-20">
         {/* Subtle Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
           <div className="absolute top-1/4 -left-20 w-40 sm:w-52 md:w-64 h-40 sm:h-52 md:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-1/4 -right-20 w-48 sm:w-64 md:w-80 h-48 sm:h-64 md:h-80 bg-gray-300/20 rounded-full blur-3xl"></div>
         </div>
 
-        {/* Global Sidebar Navigation */}
-        <aside className="fixed right-2 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4 md:gap-6 items-center px-2 md:px-4 py-4 md:py-6 bg-linear-to-b from-white/50 via-white/30 to-white/20 backdrop-blur-xl rounded-2xl border border-white/60 shadow-2xl shadow-black/10 z-40 hover:shadow-2xl hover:shadow-black/20 transition-all duration-300">
-          <nav className="flex flex-col gap-2 md:gap-3">
-            <NavItem
-              icon={<FaUser />}
-              label="Sobre"
-              active={activeSection === "about"}
-              onClick={() => setActiveSection("about")}
-            />
-            <NavItem
-              icon={<FaBrain />}
-              label="Skills"
-              active={activeSection === "skills"}
-              onClick={() => setActiveSection("skills")}
-            />
-            <NavItem
-              icon={<FaCode />}
-              label="Stack"
-              active={activeSection === "stack"}
-              onClick={() => setActiveSection("stack")}
-            />
-            <NavItem
-              icon={<FaFolderOpen />}
-              label="Portfolio"
-              active={activeSection === "portfolio"}
-              onClick={() => setActiveSection("portfolio")}
-            />
-            <div className="w-6 md:w-8 h-px bg-linear-to-r from-transparent via-gray-300/50 to-transparent mx-auto my-1 md:my-2"></div>
-            <NavItem
-              icon={<FaPalette />}
-              label="Creative"
-              active={activeSection === "creative"}
-              onClick={() => setActiveSection("creative")}
-            />
-          </nav>
-        </aside>
+        {/* Sections rendered sequentially */}
+        <div className="w-full flex flex-col items-center">
+            <section id="about" className="w-full py-12 md:py-16 lg:py-24 animate-in fade-in slide-in-from-bottom-4 duration-700">
+                <AboutSection />
+            </section>
 
-        {/* Section Container with Transition */}
-        <div className="w-full flex flex-col items-center justify-center py-12 md:py-16 lg:py-20 transition-all duration-500 ease-in-out">
-          <div key={activeSection} className="animate-in fade-in slide-in-from-bottom-4 duration-700 w-full">
-            {SECTIONS[activeSection]}
-          </div>
+            <section id="skills" className="w-full py-12 md:py-16 lg:py-24">
+                <SkillsSection />
+            </section>
+
+            <section id="stack" className="w-full py-12 md:py-16 lg:py-24">
+                <StackSection />
+            </section>
+
+            <section id="portfolio" className="w-full py-12 md:py-16 lg:py-24">
+                <PortfolioSection />
+            </section>
+
+            <section id="creative" className="w-full py-12 md:py-16 lg:py-24">
+                <CreativeSection />
+            </section>
         </div>
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
-

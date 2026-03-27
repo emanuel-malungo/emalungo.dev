@@ -17,7 +17,7 @@ export default function CardAvatar() {
             {skills.map((skill, index) => (
                 <div 
                     key={index}
-                    className={`absolute z-20 hidden sm:flex items-center gap-2 px-3 py-1.5 bg-white/80 backdrop-blur-md border border-gray-100 rounded-full shadow-lg transform transition-all duration-700 group-hover:scale-110 ${skill.className} ${skill.delay} opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0`}
+                    className={`absolute z-20 hidden sm:flex items-center gap-2 px-3 py-1.5 bg-white/80 backdrop-blur-md border border-gray-100 rounded-full transform transition-all duration-700 group-hover:scale-110 ${skill.className} ${skill.delay} opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0`}
                 >
                     <span className="text-accent text-sm">{skill.icon}</span>
                     <span className="text-[10px] font-bold text-gray-700 uppercase tracking-tighter">{skill.name}</span>
@@ -28,7 +28,7 @@ export default function CardAvatar() {
             <div className="absolute -inset-4 bg-linear-to-tr from-accent/20 to-transparent rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
             
             {/* Image Container with Framing */}
-            <div className="relative aspect-square w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-gray-100 shadow-2xl transform transition-all duration-700 bg-gray-50 group-hover:scale-[1.02] group-hover:-rotate-1">
+            <div className="relative aspect-square w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-gray-100 transform transition-all duration-700 bg-gray-50 group-hover:scale-[1.02] group-hover:-rotate-1">
                 <Image
                     src={avatar}
                     alt="Emanuel Malungo"
