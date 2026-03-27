@@ -13,7 +13,7 @@ export default function Home() {
     <div className="flex flex-col w-full min-h-screen overflow-x-hidden">
       <Header />
 
-      <main className="flex-1 mx-auto w-full lg:max-w-7xl lg:border-x lg:border-black/5 relative flex flex-col px-2 sm:px-4 md:px-6 pt-16 md:pt-20">
+      <main className="flex-1 mx-auto w-full lg:max-w-7xl lg:border-x lg:border-black/5 relative flex flex-col px-2 sm:px-4 md:px-6 pt-8 md:pt-10">
         {/* Subtle Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
           <div className="absolute top-1/4 -left-20 w-40 sm:w-52 md:w-64 h-40 sm:h-52 md:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
