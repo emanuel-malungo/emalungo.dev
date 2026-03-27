@@ -4,12 +4,16 @@ import MainContent from "./About/MainContent";
 
 export default function AboutSection() {
     return (
-        <section className="md:px-12 flex flex-col md:flex-row justify-between items-center gap-12 w-full py-12 md:py-0">
-            {/* Card Avatar - Left Column */}
-            <CardAvatar />
+        <section className="w-full">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-16 w-full">
+                {/* Main Hero Content - Left Column */}
+                <MainContent />
 
-            {/* Main Hero Content - Center Column */}
-            <MainContent />
+                {/* Simplified Card Avatar - Right Column */}
+                <div className="w-full lg:w-auto flex justify-center lg:justify-end">
+                    <CardAvatar />
+                </div>
+            </div>
         </section>
     )
 }

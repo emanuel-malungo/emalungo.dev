@@ -46,21 +46,21 @@ export default function Home() {
 
   return (
     <div
-      className="flex flex-col h-screen w-screen bg-linear-to-br from-primary via-cream to-gray-100 overflow-hidden"
+      className="flex flex-col w-screen min-h-screen bg-linear-to-br from-primary via-cream to-gray-100"
       onWheel={handleWheel}
     >
       <Header activeSection={activeSection} onSectionChange={setActiveSection} />
 
-      <main className="flex-1 mx-auto w-full md:max-w-7xl md:border-x md:border-black/5 relative overflow-hidden flex flex-col items-center justify-center">
+      <main className="flex-1 mx-auto w-full lg:max-w-7xl lg:border-x lg:border-black/5 relative flex flex-col px-2 sm:px-4 md:px-6">
         {/* Subtle Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
-          <div className="absolute top-1/4 -left-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-gray-300/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/4 -left-20 w-40 sm:w-52 md:w-64 h-40 sm:h-52 md:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 -right-20 w-48 sm:w-64 md:w-80 h-48 sm:h-64 md:h-80 bg-gray-300/20 rounded-full blur-3xl"></div>
         </div>
 
         {/* Global Sidebar Navigation */}
-        <aside className="fixed right-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-6 items-center px-4 py-6 bg-linear-to-b from-white/50 via-white/30 to-white/20 backdrop-blur-xl rounded-2xl border border-white/60 shadow-2xl shadow-black/10 z-50 hover:shadow-2xl hover:shadow-black/20 transition-all duration-300">
-          <nav className="flex flex-col gap-3">
+        <aside className="fixed right-2 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4 md:gap-6 items-center px-2 md:px-4 py-4 md:py-6 bg-linear-to-b from-white/50 via-white/30 to-white/20 backdrop-blur-xl rounded-2xl border border-white/60 shadow-2xl shadow-black/10 z-40 hover:shadow-2xl hover:shadow-black/20 transition-all duration-300">
+          <nav className="flex flex-col gap-2 md:gap-3">
             <NavItem
               icon={<FaUser />}
               label="Sobre"
@@ -85,7 +85,7 @@ export default function Home() {
               active={activeSection === "portfolio"}
               onClick={() => setActiveSection("portfolio")}
             />
-            <div className="w-8 h-px bg-linear-to-r from-transparent via-gray-300/50 to-transparent mx-auto my-2"></div>
+            <div className="w-6 md:w-8 h-px bg-linear-to-r from-transparent via-gray-300/50 to-transparent mx-auto my-1 md:my-2"></div>
             <NavItem
               icon={<FaPalette />}
               label="Creative"
@@ -96,14 +96,14 @@ export default function Home() {
         </aside>
 
         {/* Section Container with Transition */}
-        <div className="w-full h-full flex flex-col items-center justify-center transition-all duration-500 ease-in-out px-4 md:px-0">
-          <div key={activeSection} className="animate-in fade-in slide-in-from-bottom-4 duration-700 w-full h-full flex items-center justify-center">
+        <div className="w-full flex flex-col items-center justify-center py-12 md:py-16 lg:py-20 transition-all duration-500 ease-in-out">
+          <div key={activeSection} className="animate-in fade-in slide-in-from-bottom-4 duration-700 w-full">
             {SECTIONS[activeSection]}
           </div>
         </div>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
