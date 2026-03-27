@@ -1,9 +1,24 @@
 
 import Link from "next/link";
 
-export default function Header() {
+type SectionId = "about" | "skills" | "stack" | "portfolio" | "creative";
+
+interface HeaderProps {
+    activeSection?: SectionId;
+    onSectionChange?: (section: SectionId) => void;
+}
+
+export default function Header({ activeSection, onSectionChange }: HeaderProps) {
+    const navItems: { id: SectionId; label: string }[] = [
+        { id: "about", label: "Sobre mim" },
+        { id: "skills", label: "Soft Skills" },
+        { id: "stack", label: "Hard Skills" },
+        { id: "portfolio", label: "Projectos" },
+        { id: "creative", label: "Creative" },
+    ];
+
     return (
-        <header className="border-b border-gray-200/60">
+        <header className="border-b border-gray-200/60 transition-colors">
             <nav className="mx-auto px-4 py-4 md:max-w-7xl md:px-8 md:border-x md:border-gray-200/60 flex items-center justify-between">
                 <div className="flex items-center gap-12">
                     <Link href="/" className="text-2xl font-serif font-bold tracking-tighter">
@@ -12,18 +27,20 @@ export default function Header() {
 
                     {/* Navigation Menu */}
                     <div className="hidden md:flex items-center gap-8">
-                        <button className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors cursor-pointer" title="Sobre mim">
-                            <span className="text-sm font-medium">Sobre mim</span>
-                        </button>
-                        <button className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors cursor-pointer" title="Soft Skills">
-                            <span className="text-sm font-medium">Soft Skills</span>
-                        </button>
-                        <button className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors cursor-pointer" title="Hard Skills">
-                            <span className="text-sm font-medium">Hard Skills</span>
-                        </button>
-                        <button className="flex items-center gap-2 text-gray-700 hover:text-black transition-colors cursor-pointer" title="Projectos">
-                            <span className="text-sm font-medium">Projectos</span>
-                        </button>
+                        {navItems.map((item) => (
+                            <button
+                                key={item.id}
+                                onClick={() => onSectionChange?.(item.id)}
+                                className={`flex items-center gap-2 transition-all cursor-pointer ${
+                                    activeSection === item.id 
+                                        ? "text-black font-bold border-b-2 border-accent" 
+                                        : "text-gray-500 hover:text-black"
+                                }`}
+                                title={item.label}
+                            >
+                                <span className="text-sm font-medium">{item.label}</span>
+                            </button>
+                        ))}
                     </div>
                 </div>
 
