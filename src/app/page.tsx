@@ -59,8 +59,8 @@ export default function Home() {
         </div>
 
         {/* Global Sidebar Navigation */}
-        <aside className="fixed right-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-6 items-center p-2 bg-white/40 backdrop-blur-md rounded-full border border-white/50 shadow-sm z-50">
-          <nav className="flex flex-col gap-4">
+        <aside className="fixed right-8 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-6 items-center px-4 py-6 bg-linear-to-b from-white/50 via-white/30 to-white/20 backdrop-blur-xl rounded-2xl border border-white/60 shadow-2xl shadow-black/10 z-50 hover:shadow-2xl hover:shadow-black/20 transition-all duration-300">
+          <nav className="flex flex-col gap-3">
             <NavItem
               icon={<FaUser />}
               label="Sobre"
@@ -85,7 +85,7 @@ export default function Home() {
               active={activeSection === "portfolio"}
               onClick={() => setActiveSection("portfolio")}
             />
-            <div className="w-6 h-px bg-gray-200 mx-auto my-1"></div>
+            <div className="w-8 h-px bg-linear-to-r from-transparent via-gray-300/50 to-transparent mx-auto my-2"></div>
             <NavItem
               icon={<FaPalette />}
               label="Creative"
