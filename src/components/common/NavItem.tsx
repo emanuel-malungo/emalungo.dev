@@ -1,7 +1,8 @@
 
-export default function NavItem({ icon, label, active = false }: { icon: React.ReactNode, label: string, active?: boolean }) {
+export default function NavItem({ icon, label, active = false, onClick }: { icon: React.ReactNode, label: string, active?: boolean, onClick?: () => void }) {
     return (
         <button
+            onClick={onClick}
             className={`group relative w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${active
                 ? 'bg-black text-white shadow-lg shadow-black/20'
                 : 'bg-white/50 text-gray-500 hover:bg-black hover:text-white hover:shadow-lg hover:shadow-black/10'
