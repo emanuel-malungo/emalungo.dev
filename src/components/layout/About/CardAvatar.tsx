@@ -17,7 +17,7 @@ export default function CardAvatar() {
             {skills.map((skill, index) => (
                 <div 
                     key={index}
-                    className={`absolute z-20 flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-white/80 backdrop-blur-md border border-gray-100 rounded-full transform transition-all duration-700 group-hover:scale-110 ${skill.className} ${skill.delay} opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0`}
+                    className={`absolute z-20 flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 bg-white/80 backdrop-blur-md border border-gray-300 rounded-full transform transition-all duration-700 group-hover:scale-110 ${skill.className} ${skill.delay} opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0`}
                 >
                     <span className="text-accent text-xs sm:text-sm">{skill.icon}</span>
                     <span className="text-[8px] sm:text-[10px] font-bold text-gray-700 uppercase tracking-tighter">{skill.name}</span>
@@ -28,7 +28,7 @@ export default function CardAvatar() {
             <div className="absolute -inset-4 bg-linear-to-tr from-accent/20 to-transparent rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
             
             {/* Image Container with Framing */}
-            <div className="relative aspect-square w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border border-gray-100 transform transition-all duration-700 bg-gray-50 group-hover:scale-[1.02] group-hover:-rotate-1">
+            <div className="relative aspect-square w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border border-gray-300 transform transition-all duration-700 bg-gray-50 group-hover:scale-[1.02] group-hover:-rotate-1">
                 <Image
                     src={avatar}
                     alt="Emanuel Malungo"
@@ -47,7 +47,7 @@ export default function CardAvatar() {
 
             {/* Decorative Corner Accents (Visible on larger screens) */}
             <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-24 h-24 sm:w-32 sm:h-32 border-b-[3px] border-r-[3px] border-accent/20 rounded-br-3xl -z-10 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-700 ease-out"></div>
-            <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-24 h-24 sm:w-32 sm:h-32 border-t-[3px] border-l-[3px] border-black/5 rounded-tl-3xl -z-10 group-hover:-translate-x-3 group-hover:-translate-y-3 transition-transform duration-700 ease-out"></div>
+            <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-24 h-24 sm:w-32 sm:h-32 border-t-[3px] border-l-[3px] border-gray-300 rounded-tl-3xl -z-10 group-hover:-translate-x-3 group-hover:-translate-y-3 transition-transform duration-700 ease-out"></div>
         </div>
     )
 }

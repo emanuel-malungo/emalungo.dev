@@ -57,11 +57,11 @@ export default function PortfolioSection() {
                     {projects.map((project, index) => (
                         <div 
                             key={index}
-                            className="group relative flex flex-col bg-white border border-black/3 rounded-2xl p-6 transition-all duration-500 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.05)] hover:-translate-y-1.5"
+                            className="group relative flex flex-col bg-white border border-gray-300 rounded-2xl p-6 transition-all duration-500 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.05)] hover:-translate-y-1.5"
                         >
                             {/* Favicon-style Icon & Category */}
                             <div className="flex items-start justify-between mb-6">
-                                <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-gray-50 border border-black/3 group-hover:border-accent/20 group-hover:bg-accent/2 transition-all duration-500 shadow-sm">
+                                <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-gray-50 border border-gray-300 group-hover:border-accent/20 group-hover:bg-accent/2 transition-all duration-500 shadow-sm">
                                     <div className="text-xl opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
                                         {project.icon}
                                     </div>
@@ -87,7 +87,7 @@ export default function PortfolioSection() {
                                     {project.tech.slice(0, 3).map((tag, tIdx) => (
                                         <span 
                                             key={tIdx}
-                                            className="text-[10px] font-medium text-gray-400 bg-gray-50/50 px-2 py-0.5 rounded-full border border-black/3 group-hover:text-gray-600 transition-colors"
+                                            className="text-[10px] font-medium text-gray-400 bg-gray-50/50 px-2 py-0.5 rounded-full border border-gray-300 group-hover:text-gray-600 transition-colors"
                                         >
                                             {tag}
                                         </span>

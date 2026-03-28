@@ -63,14 +63,14 @@ export default function StackSection() {
                         <div key={catIdx} className="space-y-6">
                             <div className="flex items-center gap-4">
                                 <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest text-gray-400 whitespace-nowrap">{category.name}</span>
-                                <div className="h-px bg-gray-100 flex-1"></div>
+                                <div className="h-px bg-gray-300 flex-1"></div>
                             </div>
                             
                             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex lg:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 md:gap-6">
                                 {category.skills.map((skill, skillIdx) => (
                                     <div 
                                         key={skillIdx}
-                                        className="group relative flex items-center justify-start sm:justify-center lg:justify-start gap-2.5 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-gray-100/80 rounded-xl sm:rounded-2xl shadow-sm transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1 cursor-default"
+                                        className="group relative flex items-center justify-start sm:justify-center lg:justify-start gap-2.5 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 bg-white border border-gray-300 rounded-xl sm:rounded-2xl shadow-sm transition-all duration-300 hover:border-accent/40 hover:shadow-lg hover:-translate-y-1 cursor-default"
                                     >
                                         <div className="text-xl sm:text-2xl transition-transform duration-300 group-hover:scale-110 shrink-0">
                                             {skill.icon}
@@ -87,7 +87,7 @@ export default function StackSection() {
                 </div>
 
                 {/* Footer Insight */}
-                <div className="mt-4 p-5 sm:p-6 bg-gray-50/50 border border-black/5 rounded-2xl sm:rounded-3xl flex items-center gap-4 group transition-colors hover:bg-white hover:border-accent/20">
+                <div className="mt-4 p-5 sm:p-6 bg-gray-50/50 border border-gray-300 rounded-2xl sm:rounded-3xl flex items-center gap-4 group transition-colors hover:bg-white hover:border-accent/20">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-black flex items-center justify-center text-white shrink-0 group-hover:bg-accent transition-colors">
                         <FaCode size={18} className="sm:size-[20px]" />
                     </div>

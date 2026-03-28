@@ -64,14 +64,14 @@ export default function SoftSkills() {
                     {skills.map((skill, index) => (
                         <div 
                             key={index}
-                            className="group relative p-8 bg-white/40 backdrop-blur-xs border border-gray-100 rounded-3xl transition-all duration-500 hover:shadow-2xl hover:shadow-accent/5 hover:-translate-y-2 overflow-hidden"
+                            className="group relative p-8 bg-white/40 backdrop-blur-xs border border-gray-300 rounded-3xl transition-all duration-500 hover:shadow-2xl hover:shadow-accent/5 hover:-translate-y-2 overflow-hidden"
                             style={{ transitionDelay: `${skill.delay}ms` }}
                         >
                             {/* Accent Background Highlight */}
                             <div className="absolute inset-0 bg-linear-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             
                             {/* Icon Container */}
-                            <div className="relative w-14 h-14 mb-6 rounded-2xl bg-white border border-gray-100 flex items-center justify-center text-accent text-2xl shadow-sm group-hover:scale-110 group-hover:bg-accent group-hover:text-white transition-all duration-500">
+                            <div className="relative w-14 h-14 mb-6 rounded-2xl bg-white border border-gray-300 flex items-center justify-center text-accent text-2xl shadow-sm group-hover:scale-110 group-hover:bg-accent group-hover:text-white transition-all duration-500">
                                 {skill.icon}
                             </div>
                             
