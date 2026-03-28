@@ -100,7 +100,7 @@ export default function Header() {
                         </nav>
                         
                         <div className="p-6 border-t border-white/20 italic text-sm text-white/50">
-                            Crafting premium digital experiences.
+                            Tudo é lógica: o bug e o debug.
                         </div>
                     </div>
                 </div>
