@@ -78,7 +78,7 @@ export default function Footer() {
                         {/* Status Badge */}
                         <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent/5 rounded-full border border-accent/10">
                             <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></div>
-                            <span className="text-[10px] font-bold text-accent uppercase tracking-widest">Disponível para Freelance</span>
+                            <span className="text-[10px] font-bold text-accent uppercase tracking-widest">Disponível para novas oportunidades</span>
                         </div>
                     </div>
                 </div>
