@@ -9,7 +9,6 @@ export default function Footer() {
         { id: "skills", label: "Soft Skills" },
         { id: "stack", label: "Hard Skills" },
         { id: "portfolio", label: "Projectos" },
-        { id: "creative", label: "Creative" },
     ];
 
     return (
