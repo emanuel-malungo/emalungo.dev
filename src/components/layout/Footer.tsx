@@ -12,8 +12,8 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="w-full bg-white border-t border-gray-100">
-            <div className="mx-auto px-6 sm:px-10 lg:px-16 py-16 lg:max-w-7xl lg:border-x lg:border-black/5">
+        <footer className="w-full bg-white border-t border-gray-300">
+            <div className="mx-auto px-6 sm:px-10 lg:px-16 py-16 lg:max-w-7xl lg:border-x lg:border-gray-300">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20">
                     
                     {/* Brand & Socials Section */}
@@ -84,7 +84,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar Section */}
-                <div className="mt-20 pt-10 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center gap-6">
+                <div className="mt-20 pt-10 border-t border-gray-300 flex flex-col sm:flex-row justify-between items-center gap-6">
                     <p className="text-xs text-gray-400 font-medium">
                         &copy; {currentYear} Emanuel Malungo. Todos os direitos reservados.
                     </p>
