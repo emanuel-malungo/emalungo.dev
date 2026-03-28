@@ -31,7 +31,7 @@ export default function MainContent() {
                 </button>
 
                 <div className="flex items-center gap-4">
-                    <div className="w-10 h-px bg-gray-200"></div>
+                    <div className="w-10 h-px bg-gray-300"></div>
                     <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] whitespace-nowrap">Ligar-se</h4>
                     <ul className="flex gap-4">
                         <li>
@@ -54,23 +54,23 @@ export default function MainContent() {
             </div>
 
             {/* Stat / Role - Refined with premium styling */}
-            <div className="mt-12 pt-10 border-t border-gray-100 flex flex-wrap justify-center lg:justify-start gap-12 sm:gap-20">
+            <div className="mt-12 pt-10 border-t border-gray-300 flex flex-wrap justify-center lg:justify-start gap-12 sm:gap-20">
                 <div className="flex flex-col gap-1.5 group">
                     <div className="flex items-baseline gap-1.5">
                         <h4 className="text-4xl sm:text-5xl font-serif font-bold text-black tracking-tighter group-hover:text-accent transition-colors duration-500">42</h4>
-                        <span className="text-accent text-[10px] font-black uppercase tracking-widest border border-accent/20 px-2 rounded-sm bg-accent/5">Luanda</span>
+                        <span className="text-accent text-[10px] font-black uppercase tracking-widest border border-accent/40 px-2 rounded-sm bg-accent/5">Luanda</span>
                     </div>
                     <p className="text-[10px] sm:text-xs text-gray-400 font-bold uppercase tracking-[0.15em]">
                         Estudante de <span className="text-gray-600">Software</span>
                     </p>
                 </div>
 
-                <div className="w-px h-16 bg-gray-200/60 hidden sm:block self-center"></div>
+                <div className="w-px h-16 bg-gray-300 hidden sm:block self-center"></div>
 
                 <div className="flex flex-col gap-1.5 group">
                     <div className="flex items-baseline gap-1.5">
                         <h4 className="text-4xl sm:text-5xl font-serif font-bold text-black tracking-tighter group-hover:text-accent transition-colors duration-500">3+</h4>
-                        <span className="text-accent text-[10px] font-black uppercase tracking-widest border border-accent/20 px-2 rounded-sm bg-accent/5">Years</span>
+                        <span className="text-accent text-[10px] font-black uppercase tracking-widest border border-accent/40 px-2 rounded-sm bg-accent/5">Years</span>
                     </div>
                     <p className="text-[10px] sm:text-xs text-gray-400 font-bold uppercase tracking-[0.15em]">
                         Experiência <span className="text-gray-600">Desenvolvimento</span>

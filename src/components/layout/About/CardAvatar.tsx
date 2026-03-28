@@ -46,8 +46,8 @@ export default function CardAvatar() {
             </div>
 
             {/* Decorative Corner Accents (Visible on larger screens) */}
-            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-24 h-24 sm:w-32 sm:h-32 border-b-[3px] border-r-[3px] border-accent/20 rounded-br-3xl -z-10 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-700 ease-out"></div>
-            <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-24 h-24 sm:w-32 sm:h-32 border-t-[3px] border-l-[3px] border-gray-300 rounded-tl-3xl -z-10 group-hover:-translate-x-3 group-hover:-translate-y-3 transition-transform duration-700 ease-out"></div>
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-24 h-24 sm:w-32 sm:h-32 border-b-[3px] border-r-[3px] border-accent/40 rounded-br-3xl -z-10 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-700 ease-out"></div>
+            <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-24 h-24 sm:w-32 sm:h-32 border-t-[3px] border-l-[3px] border-gray-400 rounded-tl-3xl -z-10 group-hover:-translate-x-3 group-hover:-translate-y-3 transition-transform duration-700 ease-out"></div>
         </div>
     )
 }
