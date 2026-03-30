@@ -46,6 +46,15 @@ export default function PortfolioSection() {
             icon: <FaDatabase className="text-accent" />,
             link: "https://jomorais-backend.vercel.app/docs/",
             github: "git@github.com:emanuel-malungo/jomorais-backend.git"
+        },
+        {
+            title: "Higienix",
+            category: "Mobile / App",
+            description: "Aplicação mobile para gerenciar serviços de higiene e limpeza. Painéis para clientes agendarem serviços e funcionários gerenciarem perfis e agendamentos.",
+            tech: ["React Native", "TypeScript", "Expo", "Tailwind CSS"],
+            icon: <FaMobileAlt className="text-accent" />,
+            link: "#",
+            github: "https://github.com/emanuel-malungo/higienix-mobile-front"
         }
     ];
 
