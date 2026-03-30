@@ -64,7 +64,7 @@ export default function MainContent() {
 
                 <div className="flex flex-col gap-1.5 group">
                     <div className="flex items-baseline gap-1.5">
-                        <h4 className="text-4xl sm:text-5xl font-serif font-bold text-black tracking-tighter group-hover:text-accent transition-colors duration-500">3+</h4>
+                        <h4 className="text-4xl sm:text-5xl font-serif font-bold text-black tracking-tighter group-hover:text-accent transition-colors duration-500">2+</h4>
                         <span className="text-accent text-[10px] font-black uppercase tracking-widest border border-accent/40 px-2 rounded-sm bg-accent/5">Years</span>
                     </div>
                     <p className="text-[10px] sm:text-xs text-gray-400 font-bold uppercase tracking-[0.15em]">
