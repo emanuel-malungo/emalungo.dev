@@ -46,6 +46,15 @@ export default function PortfolioSection() {
             icon: <FaGlobe className="text-accent" />,
             link: "https://igrupowebsite.vercel.app/",
             github: "#"
+        },
+        {
+            title: "VIA - Orientação Vocacional",
+            category: "Education / AI",
+            description: "Aplicativo inteligente que ajuda estudantes a descobrir o curso ideal através de questionário personalizado e análise por IA usando Google Gemini.",
+            tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+            icon: <FaBrain className="text-accent" />,
+            link: "https://via-frontend-pearl.vercel.app/",
+            github: "git@github.com:emanuel-malungo/via.git"
         }
     ];
 
