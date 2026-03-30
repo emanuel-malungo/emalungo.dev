@@ -86,7 +86,7 @@ export default function Header() {
             >
                 {/* Mobile Menu Drawer */}
                 <div 
-                    className={`fixed top-0 right-0 h-screen w-[280px] shadow-2xl transition-transform duration-500 transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+                    className={`fixed top-0 right-0 h-screen w-70 shadow-2xl transition-transform duration-500 transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
                     style={{ backgroundColor: '#C6A75E' }}
                     onClick={(e) => e.stopPropagation()}
                 >
