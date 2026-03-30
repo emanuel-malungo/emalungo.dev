@@ -42,17 +42,29 @@ export default function Header() {
                     <div className="flex items-center gap-2 sm:gap-4">
                         {/* Language Switcher */}
                         <div className="flex items-center bg-gray-100 p-0.5 sm:p-1 rounded-full border border-gray-200">
-                            <button className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold transition-all bg-black text-white shadow-sm cursor-pointer hover:bg-gray-800">
+                            <button 
+                                disabled
+                                title="Em desenvolvimento"
+                                className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold transition-all bg-black text-white shadow-sm cursor-not-allowed opacity-60 hover:opacity-60"
+                            >
                                 PT
                             </button>
-                            <button className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold transition-all bg-white text-black cursor-pointer hover:bg-gray-200">
+                            <button 
+                                disabled
+                                title="Em desenvolvimento"
+                                className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold transition-all bg-white text-black cursor-not-allowed opacity-60 hover:opacity-60"
+                            >
                                 EN
                             </button>
                         </div>
 
                         {/* Theme Toggle Placeholder */}
-                        <button className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 hover:text-accent hover:border-accent/40 hover:shadow-sm transition-all cursor-pointer">
-                            <FaSun size={18} className="sm:size-[20px]" />
+                        <button 
+                            disabled
+                            title="Em desenvolvimento"
+                            className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 cursor-not-allowed opacity-60 hover:opacity-60 transition-all"
+                        >
+                            <FaSun size={18} className="sm:size-5" />
                         </button>
 
                         {/* Mobile Hamburger Button */}
