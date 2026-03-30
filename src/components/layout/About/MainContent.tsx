@@ -22,13 +22,13 @@ export default function MainContent() {
 
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 sm:gap-8">
-                <button className="group relative px-6 py-3 bg-black text-white rounded-full font-bold overflow-hidden shadow-xl hover:shadow-black/20 transition-all active:scale-95 flex items-center gap-3 text-sm w-full sm:w-auto justify-center">
+                <a href="/emalungodev_cv.pdf" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-black text-white rounded-full font-bold overflow-hidden shadow-xl hover:shadow-black/20 transition-all active:scale-95 flex items-center gap-3 text-sm w-full sm:w-auto justify-center">
                     <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                     <div className="relative w-7 h-7 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-black/20">
                         <FaDownload className="text-white text-[10px] group-hover:animate-bounce" />
                     </div>
                     <span className="relative">Descarregar Currículo</span>
-                </button>
+                </a>
 
                 <div className="flex items-center gap-4">
                     <div className="w-10 h-px bg-gray-300"></div>
