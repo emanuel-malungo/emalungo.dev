@@ -3,46 +3,10 @@ import { FaGithub, FaExternalLinkAlt, FaCode, FaGlobe, FaMobileAlt, FaDatabase, 
 export default function PortfolioSection() {
     const projects = [
         {
-            title: "Plataforma E-Commerce Nexo",
-            category: "Fullstack / Fintech",
-            description: "Uma experiência de compra ultra-rápida com integração de pagamentos e painel administrativo dinâmico.",
-            tech: ["Next.js", "Prisma", "Stripe", "Tailwind"],
-            icon: <FaGlobe className="text-accent" />,
-            link: "#",
-            github: "#"
-        },
-        {
-            title: "Dashboard de Bio-Métricas",
-            category: "HealthTech / Dashboard",
-            description: "Visualização de dados críticos em tempo real para monitoramento de saúde de atletas e pacientes.",
-            tech: ["React", "D3.js", "Firebase", "TypeScript"],
-            icon: <FaDatabase className="text-accent" />,
-            link: "#",
-            github: "#"
-        },
-        {
-            title: "3D Galaxy Explorer",
-            category: "Creative / WebGL",
-            description: "Uma imersão interativa no espaço sideral construída com tecnologias gráficas de ponta.",
-            tech: ["Three.js", "GSAP", "React-Three-Fiber"],
-            icon: <FaMobileAlt className="text-accent" />,
-            link: "#",
-            github: "#"
-        },
-        {
-            title: "Sistema AI Guardião",
-            category: "Backend / AI",
-            description: "Motor de análise preditiva para segurança cibernética utilizando redes neurais avançadas.",
-            tech: ["Python", "Node.js", "TensorFlow", "Docker"],
-            icon: <FaBrain className="text-accent" />,
-            link: "#",
-            github: "#"
-        },
-        {
             title: "Website Grupo Inácios",
             category: "Web Design / Branding",
             description: "Site informativo que apresenta o Grupo Inácios e suas 6 empresas especializadas em fotografia, produção audiovisual, marketing digital, eventos, formação e tecnologia. Facilita o conhecimento do grupo e contato com clientes.",
-            tech: ["React", "Tailwind CSS"],
+            tech: ["React", "TypeScript", "Tailwind CSS"],
             icon: <FaGlobe className="text-accent" />,
             link: "https://igrupowebsite.vercel.app/",
             github: "#"
@@ -51,7 +15,7 @@ export default function PortfolioSection() {
             title: "VIA - Orientação Vocacional",
             category: "Education / AI",
             description: "Aplicativo inteligente que ajuda estudantes a descobrir o curso ideal através de questionário personalizado e análise por IA usando Google Gemini.",
-            tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+            tech: ["Next.js", "TypeScript", "Tailwind CSS"],
             icon: <FaBrain className="text-accent" />,
             link: "https://via-frontend-pearl.vercel.app/",
             github: "git@github.com:emanuel-malungo/via.git"
@@ -132,7 +96,7 @@ export default function PortfolioSection() {
                         <FaExternalLinkAlt className="relative text-xs group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </button>
                     <p className="mt-5 text-gray-400 text-[10px] font-sans font-medium uppercase tracking-[0.2em]">
-                        Explore mais no meu <a href="#" className="text-accent hover:underline">GitHub</a>
+                        Explore mais no meu <a href="https://github.com/emanuel-malungo" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">GitHub</a>
                     </p>
                 </div>
             </div>
