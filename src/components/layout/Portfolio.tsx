@@ -19,6 +19,15 @@ export default function PortfolioSection() {
             icon: <FaBrain className="text-accent" />,
             link: "https://via-frontend-pearl.vercel.app/",
             github: "git@github.com:emanuel-malungo/via.git"
+        },
+        {
+            title: "Mukanda",
+            category: "Serviços / Sustentabilidade",
+            description: "Plataforma inovadora que conecta clientes a profissionais de serviços domésticos com foco em sustentabilidade ecológica. Sistema de agendamento inteligente, avaliações e eco-práticas.",
+            tech: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
+            icon: <FaGlobe className="text-accent" />,
+            link: "https://mukanda-one.vercel.app/",
+            github: "#"
         }
     ];
 
