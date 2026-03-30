@@ -130,9 +130,9 @@ export default function PortfolioSection() {
 
                 {/* Footer Insight */}
                 <div className="mt-6 text-center">
-                    <a href="https://github.com/emanuel-malungo" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-black text-white rounded-full text-sm font-bold overflow-hidden shadow-lg hover:shadow-black/10 transition-all active:scale-95 flex items-center gap-3 mx-auto inline-flex">
+                    <a href="https://github.com/emanuel-malungo" target="_blank" rel="noopener noreferrer" className="group relative px-8 py-3 bg-black text-white rounded-full text-sm font-bold overflow-hidden shadow-lg hover:shadow-black/10 transition-all active:scale-95 flex items-center gap-3 w-fit mx-auto">
                         <div className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-                        <span className="relative">Ver Todos Projectos</span>
+                        <span className="relative">Ver todos projectos</span>
                         <FaExternalLinkAlt className="relative text-xs group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </a>
                     <p className="mt-5 text-gray-400 text-[10px] font-sans font-medium uppercase tracking-[0.2em]">
