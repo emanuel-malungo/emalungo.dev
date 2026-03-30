@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaMapMarkerAlt, FaHeart } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaMapMarkerAlt, FaHeart } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 export default function Footer() {
@@ -28,14 +28,11 @@ export default function Footer() {
                             </p>
                         </div>
                         <div className="flex gap-4">
-                            <a href="#" className="p-2 text-gray-400 hover:text-black hover:scale-110 transition-all">
+                            <a href="https://www.linkedin.com/in/emanuel-malungo-51b490298/" className="p-2 text-gray-400 hover:text-black hover:scale-110 transition-all">
                                 <FaLinkedin size={20} />
                             </a>
-                            <a href="#" className="p-2 text-gray-400 hover:text-black hover:scale-110 transition-all">
+                            <a href="https://github.com/emanuel-malungo" className="p-2 text-gray-400 hover:text-black hover:scale-110 transition-all">
                                 <FaGithub size={20} />
-                            </a>
-                            <a href="#" className="p-2 text-gray-400 hover:text-black hover:scale-110 transition-all">
-                                <FaTwitter size={20} />
                             </a>
                         </div>
                     </div>
@@ -66,13 +63,13 @@ export default function Footer() {
                                 <div className="w-8 h-8 rounded-xl bg-gray-50 flex items-center justify-center text-accent/60 shrink-0">
                                     <FaEnvelope size={14} />
                                 </div>
-                                <span className="hover:text-black transition-colors">emalungo.dev@gmail.com</span>
+                                <span className="hover:text-black transition-colors">emanuelmalungo856@gmail.com</span>
                             </li>
                             <li className="flex items-center gap-3 text-sm text-gray-500">
                                 <div className="w-8 h-8 rounded-xl bg-gray-50 flex items-center justify-center text-accent/60 shrink-0">
                                     <FaMapMarkerAlt size={14} />
                                 </div>
-                                <span>Luanda, Angola</span>
+                                <span>Angola, Luanda</span>
                             </li>
                         </ul>
                         {/* Status Badge */}

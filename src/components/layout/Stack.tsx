@@ -1,7 +1,7 @@
 import { 
     SiHtml5, SiCss, SiJavascript, SiTypescript, SiTailwindcss, SiReact, 
-    SiNextdotjs, SiFigma, SiNodedotjs, SiPrisma, SiMysql, SiPostgresql, 
-    SiMongodb, SiFirebase, SiGit, SiGithub, SiDocker, SiCplusplus, SiExpo
+    SiNextdotjs, SiFigma, SiNodedotjs, SiPrisma, SiMysql, 
+    SiFirebase, SiGit, SiGithub, SiDocker, SiCplusplus, SiExpo
 } from "react-icons/si";
 import { VscTerminal } from "react-icons/vsc";
 import { FaCode } from "react-icons/fa";
@@ -18,6 +18,7 @@ export default function StackSection() {
                 { name: "TailwindCSS", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
                 { name: "React.js", icon: <SiReact className="text-[#61DAFB]" /> },
                 { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
+                { name: "Expo", icon: <SiExpo className="text-black" /> },
                 { name: "Figma", icon: <SiFigma className="text-[#F24E1E]" /> },
             ]
         },
@@ -27,8 +28,6 @@ export default function StackSection() {
                 { name: "Node.js", icon: <SiNodedotjs className="text-[#339933]" /> },
                 { name: "Prisma", icon: <SiPrisma className="text-[#2D3748]" /> },
                 { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> },
-                { name: "PostgreSQL", icon: <SiPostgresql className="text-[#4169E1]" /> },
-                { name: "MongoDB", icon: <SiMongodb className="text-[#47A248]" /> },
                 { name: "Firebase", icon: <SiFirebase className="text-[#FFCA28]" /> },
             ]
         },
@@ -37,7 +36,6 @@ export default function StackSection() {
             skills: [
                 { name: "C / C++", icon: <SiCplusplus className="text-[#00599C]" /> },
                 { name: "Shell Script", icon: <VscTerminal className="text-[#4EAA25]" /> },
-                { name: "Expo", icon: <SiExpo className="text-black" /> },
                 { name: "Git", icon: <SiGit className="text-[#F05032]" /> },
                 { name: "GitHub", icon: <SiGithub className="text-black" /> },
                 { name: "Docker", icon: <SiDocker className="text-[#2496ED]" /> },

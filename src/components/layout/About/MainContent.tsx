@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaTwitter, FaDownload } from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaDownload } from "react-icons/fa"
 
 export default function MainContent() {
     return (
@@ -11,7 +11,7 @@ export default function MainContent() {
                         <span className="text-accent/90"> Malungo</span>
                     </h1>
                     <h2 className="text-sm sm:text-base md:text-lg font-sans font-light text-gray-400 tracking-widest uppercase mt-2">
-                        Programador Full Stack | Web & Mobile
+                        Programador Front-End | Web & Mobile
                     </h2>
                     <p className="text-gray-500 leading-relaxed text-base sm:text-lg max-w-xl font-sans font-light">
                         Apaixonado por desenvolvimento full stack, frontend, UI/UX e aplicações web modernas. Estudante da 42 Luanda com foco em criar soluções digitais inovadoras e de qualidade.
@@ -35,18 +35,13 @@ export default function MainContent() {
                     <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] whitespace-nowrap">Ligar-se</h4>
                     <ul className="flex gap-4">
                         <li>
-                            <a href="#" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
+                            <a href="https://www.linkedin.com/in/emanuel-malungo-51b490298/" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
                                 <FaLinkedin size={18} />
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
+                            <a href="https://github.com/emanuel-malungo" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
                                 <FaGithub size={18} />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
-                                <FaTwitter size={18} />
                             </a>
                         </li>
                     </ul>
