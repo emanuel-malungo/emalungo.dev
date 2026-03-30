@@ -37,6 +37,15 @@ export default function PortfolioSection() {
             icon: <FaBrain className="text-accent" />,
             link: "#",
             github: "#"
+        },
+        {
+            title: "Website Grupo Inácios",
+            category: "Web Design / Branding",
+            description: "Site informativo que apresenta o Grupo Inácios e suas 6 empresas especializadas em fotografia, produção audiovisual, marketing digital, eventos, formação e tecnologia. Facilita o conhecimento do grupo e contato com clientes.",
+            tech: ["React", "Tailwind CSS"],
+            icon: <FaGlobe className="text-accent" />,
+            link: "https://igrupowebsite.vercel.app/",
+            github: "#"
         }
     ];
 
