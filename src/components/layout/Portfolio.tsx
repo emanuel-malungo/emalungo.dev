@@ -28,6 +28,15 @@ export default function PortfolioSection() {
             icon: <FaGlobe className="text-accent" />,
             link: "https://mukanda-one.vercel.app/",
             github: "#"
+        },
+        {
+            title: "Kintwadi",
+            category: "Mobile / Social",
+            description: "Aplicativo mobile de relacionamentos e amizades desenvolvido para valorizar a cultura angolana, promovendo conexões reais entre pessoas que compartilham tradições e interesses. 🚧 Em desenvolvimento.",
+            tech: ["React Native", "Firebase"],
+            icon: <FaMobileAlt className="text-accent" />,
+            link: "#",
+            github: "https://github.com/emanuel-malungo/Kintwadi"
         }
     ];
 
