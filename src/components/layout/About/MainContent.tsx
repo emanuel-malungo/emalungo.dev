@@ -35,12 +35,12 @@ export default function MainContent() {
                     <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] whitespace-nowrap">Ligar-se</h4>
                     <ul className="flex gap-4">
                         <li>
-                            <a href="https://www.linkedin.com/in/emanuel-malungo-51b490298/" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
+                            <a href="https://www.linkedin.com/in/emanuel-malungo-51b490298/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
                                 <FaLinkedin size={18} />
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/emanuel-malungo" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
+                            <a href="https://github.com/emanuel-malungo" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-black transition-all transform hover:-translate-y-1 block">
                                 <FaGithub size={18} />
                             </a>
                         </li>
