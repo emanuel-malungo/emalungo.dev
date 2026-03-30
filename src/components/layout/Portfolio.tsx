@@ -37,6 +37,15 @@ export default function PortfolioSection() {
             icon: <FaMobileAlt className="text-accent" />,
             link: "#",
             github: "https://github.com/emanuel-malungo/Kintwadi"
+        },
+        {
+            title: "JoMorais Backend",
+            category: "Backend / API",
+            description: "API RESTful de gestão escolar com autenticação segura, gestão de alunos, pagamentos, notas e avaliações. Docker e Prisma para desenvolvimento otimizado.",
+            tech: ["Node.js", "Express", "Prisma", "MySQL"],
+            icon: <FaDatabase className="text-accent" />,
+            link: "https://jomorais-backend.vercel.app/docs/",
+            github: "git@github.com:emanuel-malungo/jomorais-backend.git"
         }
     ];
 
