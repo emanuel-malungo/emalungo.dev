@@ -72,7 +72,7 @@ export default function PortfolioSection() {
 
                 {/* Projects Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto px-4 sm:px-0">
-                    {projects.map((project, index) => (
+                    {projects.filter(project => project.link !== "#" || project.github !== "#").map((project, index) => (
                         <div 
                             key={index}
                             className="group relative flex flex-col bg-white border border-gray-300 rounded-2xl p-6 transition-all duration-500 hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.05)] hover:-translate-y-1.5"
