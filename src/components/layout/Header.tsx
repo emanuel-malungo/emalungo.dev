@@ -18,10 +18,10 @@ export default function Header() {
 
     return (
         <>
-            <header className="border-b border-gray-300 transition-colors fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md">
-                <nav className="mx-auto px-3 sm:px-4 md:px-6 py-3 md:py-4 lg:max-w-7xl lg:border-x lg:border-gray-300 flex items-center justify-between gap-3 sm:gap-4">
+            <header className="border-b border-white/10 transition-colors fixed top-0 left-0 w-full z-50 bg-[#07070A]/40 backdrop-blur-md text-white">
+                <nav className="mx-auto px-4 sm:px-6 md:px-8 py-4 flex items-center justify-between gap-3 sm:gap-4">
                     <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
-                        <Link href="/" className="text-lg sm:text-xl md:text-2xl font-serif font-bold tracking-tighter whitespace-nowrap">
+                        <Link href="/" className="text-lg sm:text-xl md:text-2xl font-serif font-bold tracking-tighter whitespace-nowrap text-white">
                             Emalungo Dev<span className="text-accent">.</span>
                         </Link>
 
@@ -31,7 +31,7 @@ export default function Header() {
                                 <a
                                     key={item.id}
                                     href={`#${item.id}`}
-                                    className="flex items-center gap-2 transition-all cursor-pointer text-xs md:text-sm text-gray-500 hover:text-black font-medium hover:border-b-2 hover:border-accent"
+                                    className="flex items-center gap-2 transition-all cursor-pointer text-xs md:text-sm text-gray-400 hover:text-white font-medium hover:border-b-2 hover:border-accent"
                                 >
                                     <span>{item.label}</span>
                                 </a>
@@ -41,18 +41,18 @@ export default function Header() {
 
                     <div className="flex items-center gap-2 sm:gap-4">
                         {/* Language Switcher */}
-                        <div className="flex items-center bg-gray-100 p-0.5 sm:p-1 rounded-full border border-gray-200">
+                        <div className="flex items-center bg-white/5 p-0.5 sm:p-1 rounded-full border border-white/10">
                             <button 
                                 disabled
                                 title="Em desenvolvimento"
-                                className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold transition-all bg-black text-white shadow-sm cursor-not-allowed opacity-60 hover:opacity-60"
+                                className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold transition-all bg-white text-black shadow-sm cursor-not-allowed opacity-90"
                             >
                                 PT
                             </button>
                             <button 
                                 disabled
                                 title="Em desenvolvimento"
-                                className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold transition-all bg-white text-black cursor-not-allowed opacity-60 hover:opacity-60"
+                                className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-bold transition-all bg-transparent text-white cursor-not-allowed opacity-40 hover:opacity-60"
                             >
                                 EN
                             </button>
@@ -62,7 +62,7 @@ export default function Header() {
                         <button 
                             disabled
                             title="Em desenvolvimento"
-                            className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-700 cursor-not-allowed opacity-60 hover:opacity-60 transition-all"
+                            className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-white cursor-not-allowed opacity-60 hover:opacity-100 transition-all"
                         >
                             <FaSun size={18} className="sm:size-5" />
                         </button>
@@ -70,7 +70,7 @@ export default function Header() {
                         {/* Mobile Hamburger Button */}
                         <button 
                             onClick={toggleMenu}
-                            className="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
+                            className="md:hidden p-2 text-white hover:bg-white/5 rounded-lg transition-colors cursor-pointer"
                             aria-label="Toggle Menu"
                         >
                             {isMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
