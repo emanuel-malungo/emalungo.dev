@@ -2,7 +2,6 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 
@@ -140,49 +139,36 @@ export default function Works() {
         <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project) => (
-              <motion.div
+              <motion.a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
                 key={project.id}
-                className="group relative bg-dark-card border border-accent-purple/10 rounded-3xl overflow-hidden shadow-lg flex flex-col justify-between"
+                className="group relative bg-dark-card border border-accent-purple/10 rounded-3xl overflow-hidden shadow-lg flex flex-col justify-between block hover:border-accent-purple/30 hover:shadow-[0_0_20px_rgba(135,80,247,0.1)] transition-all duration-300"
               >
                 {/* Background purple glow on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-accent-purple/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 pointer-events-none" />
 
-                {/* Project Image Box */}
-                <div className="relative aspect-video w-full overflow-hidden z-10 bg-[#160f26]">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
-                  {/* Image hover overlay */}
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute inset-0 bg-dark-bg/60 backdrop-blur-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20"
-                  >
-                    <div className="w-12 h-12 rounded-full bg-accent-purple flex items-center justify-center text-white shadow-[0_0_15px_rgba(135,80,247,0.6)] transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                      <ArrowUpRight className="w-5 h-5" />
-                    </div>
-                  </a>
-                </div>
-
                 {/* Info Text */}
-                <div className="relative z-10 p-6 flex-1 flex flex-col justify-between">
+                <div className="relative z-10 p-6 sm:p-8 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="text-xs font-semibold text-accent-purple tracking-wider uppercase mb-2 block">
-                      {project.subtitle}
-                    </span>
+                    <div className="flex justify-between items-start mb-4">
+                      <span className="text-xs font-semibold text-accent-purple tracking-wider uppercase">
+                        {project.subtitle}
+                      </span>
+                      <div className="w-8 h-8 rounded-full bg-accent-purple/10 flex items-center justify-center text-accent-purple group-hover:bg-accent-purple group-hover:text-white transition-all duration-300">
+                        <ArrowUpRight className="w-4 h-4" />
+                      </div>
+                    </div>
                     <h3 className="text-xl font-bold text-white group-hover:text-accent-purple transition-colors duration-300 mb-3">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-accent-light leading-relaxed mb-4">
+                    <p className="text-sm text-accent-light leading-relaxed mb-6">
                       {project.description}
                     </p>
                   </div>
@@ -201,7 +187,7 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </AnimatePresence>
         </motion.div>

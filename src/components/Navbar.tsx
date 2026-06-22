@@ -83,7 +83,7 @@ export default function Navbar() {
                 E
               </div>
               <span className="text-sm font-medium text-accent-light group-hover:text-white transition-colors hidden sm:inline-block lg:hidden xl:inline-block">
-                emanuelmalungo856@gmail.com
+                emalungo.dev
               </span>
             </a>
           </div>
