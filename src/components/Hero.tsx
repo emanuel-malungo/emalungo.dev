@@ -146,7 +146,7 @@ export default function Hero() {
         >
           {[
             { value: "3+", label: "Anos de Experiência" },
-            { value: "10+", label: "Projetos Concluídos" },
+            { value: "15+", label: "Tecnologias Dominadas" },
             { value: "Top 6", label: "GitHub em Angola" },
             { value: "42", label: "Estudante 42 Luanda" },
           ].map((stat, index) => (
