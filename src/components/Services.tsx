@@ -52,7 +52,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 text-gradient-purple inline-block"
           >
-            Meus Serviços de Qualidade
+            Minhas Especialidades
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ export default function Services() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-accent-light"
           >
-            Transformo as suas ideias e requisitos de negócio em aplicações digitais únicas, eficientes e de alto desempenho técnico.
+            Desenvolvendo soluções digitais robustas, eficientes e escaláveis através de sólidas práticas de engenharia de software.
           </motion.p>
         </div>
 

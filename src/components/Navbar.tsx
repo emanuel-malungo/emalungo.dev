@@ -9,7 +9,7 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: "Serviços", href: "#services" },
+  { label: "Especialidades", href: "#services" },
   { label: "Projetos", href: "#works" },
   { label: "Currículo", href: "#resume" },
   { label: "Competências", href: "#skills" },
@@ -93,13 +93,13 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Hire Me CTA Button */}
+        {/* Contact CTA Button */}
         <div className="hidden md:block">
           <a
             href="#contact"
             className="px-6 py-2.5 rounded-full border border-accent-purple text-sm font-semibold text-white hover:bg-accent-purple transition-all duration-300 hover:shadow-[0_0_15px_rgba(135,80,247,0.4)]"
           >
-            Contrate-me!
+            Fale Comigo
           </a>
         </div>
 
@@ -137,7 +137,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             className="mt-4 px-8 py-3 rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_20px_rgba(135,80,247,0.5)] transition-all duration-300 w-full text-center max-w-[250px]"
           >
-            Contrate-me!
+            Fale Comigo
           </a>
           <span className="text-sm text-accent-light mt-8">
             contato@emalungo.dev

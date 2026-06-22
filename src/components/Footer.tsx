@@ -14,12 +14,12 @@ export default function Footer() {
         {/* Footer Navigation */}
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm font-semibold text-accent-light">
           {[
-            { label: "Services", href: "#services" },
-            { label: "Works", href: "#works" },
-            { label: "Resume", href: "#resume" },
-            { label: "Skills", href: "#skills" },
-            { label: "Testimonials", href: "#testimonials" },
-            { label: "Contact", href: "#contact" },
+            { label: "Especialidades", href: "#services" },
+            { label: "Projetos", href: "#works" },
+            { label: "Currículo", href: "#resume" },
+            { label: "Competências", href: "#skills" },
+            { label: "Depoimentos", href: "#testimonials" },
+            { label: "Contacto", href: "#contact" },
           ].map((link) => (
             <a
               key={link.label}
