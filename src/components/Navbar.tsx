@@ -70,7 +70,7 @@ export default function Navbar() {
               E
             </div>
             <span className="text-sm font-medium text-accent-light group-hover:text-white transition-colors hidden sm:inline-block">
-              contato@emalungo.dev
+              emanuelmalungo856@gmail.com
             </span>
           </a>
         </div>

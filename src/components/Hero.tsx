@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import Image from "next/image";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   const containerVariants = {
@@ -64,7 +66,9 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center gap-6 justify-center md:justify-start"
           >
             <a
-              href="#"
+              href="/assets/doc/emalungo_cv_resumo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3.5 rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold flex items-center gap-2 shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_25px_rgba(135,80,247,0.5)] transition-all duration-300 transform hover:-translate-y-0.5"
             >
               Descarregar CV <Download className="w-4 h-4" />
@@ -74,43 +78,25 @@ export default function Hero() {
             <div className="flex gap-4">
               {[
                 {
-                  name: "facebook",
-                  svg: (
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                  ),
-                  url: "#",
-                },
-                {
-                  name: "twitter",
-                  svg: (
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  ),
-                  url: "#",
+                  name: "github",
+                  icon: <SiGithub className="w-5 h-5" />,
+                  url: "https://github.com/emanuel-malungo",
                 },
                 {
                   name: "linkedin",
-                  svg: (
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
-                  ),
-                  url: "#",
-                },
-                {
-                  name: "behance",
-                  svg: (
-                    <path d="M22 7h-7v1.5h7v-1.5zm-1.5 5.5c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zm-5.5-2.25c0-.966-.784-1.75-1.75-1.75h-3.25v3.5h3.25c.966 0 1.75-.784 1.75-1.75zm-1.75 4.75c.966 0 1.75-.784 1.75-1.75s-.784-1.75-1.75-1.75h-3.25v3.5h3.25zm10.75-3.5c-.966 0-1.75.784-1.75 1.75v3.25c0 .966.784 1.75 1.75 1.75s1.75-.784 1.75-1.75v-3.25c0-.966-.784-1.75-1.75-1.75zM12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 15.5c0 1.933-1.567 3.5-3.5 3.5h-5.5v-10h5.5c1.933 0 3.5 1.567 3.5 3.5v3zm7 0c0 1.933-1.567 3.5-3.5 3.5s-3.5-1.567-3.5-3.5v-3.5c0-1.933 1.567-3.5 3.5-3.5s3.5 1.567 3.5 3.5v3.5z" />
-                  ),
-                  url: "#",
+                  icon: <FaLinkedin className="w-5 h-5" />,
+                  url: "https://www.linkedin.com/in/emanuel-malungo-51b490298/",
                 },
               ].map((social) => (
                 <a
                   key={social.name}
                   href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-11 h-11 rounded-full border border-accent-purple/30 flex items-center justify-center text-accent-purple hover:text-white hover:bg-accent-purple hover:border-accent-purple transition-all duration-300"
                   aria-label={social.name}
                 >
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                    {social.svg}
-                  </svg>
+                  {social.icon}
                 </a>
               ))}
             </div>
