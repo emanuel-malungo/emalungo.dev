@@ -139,7 +139,7 @@ export default function Hero() {
             <div className="absolute inset-[3px] bg-dark-bg rounded-[37px] overflow-hidden">
               <Image
                 src="/assets/images/hero-portrait.png"
-                alt="Gerold Portrait"
+                alt="Emanuel Malungo Portrait"
                 fill
                 priority
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
