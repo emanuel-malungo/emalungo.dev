@@ -138,7 +138,7 @@ export default function Hero() {
             {/* Image Wrapper */}
             <div className="absolute inset-[3px] bg-dark-bg rounded-[37px] overflow-hidden">
               <Image
-                src="/assets/images/hero-portrait.png"
+                src="/assets/images/avatar.png"
                 alt="Emanuel Malungo Portrait"
                 fill
                 priority
