@@ -1,45 +1,123 @@
 @import "tailwindcss";
 
 /* ===========================
-   Configuração do Tema
-=========================== */
+   Configuração do Tema (Tailwind v4)
+   =========================== */
 
 @theme {
-	/* Fontes */
-	--font-family-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
-	--font-family-serif: var(--font-playfair), Georgia, serif;
+  /* Fontes */
+  --font-family-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-family-serif: var(--font-playfair), Georgia, serif;
 
-	/* Cores customizadas */
-	--color-primary: #FFFBF5;
-	--color-cream: #FFF7EC;
-	--color-black: #0F0F0F;
-	--color-gray-100: #F5F5F5;
-	--color-gray-300: #D1D1D1;
-	--color-gray-600: #6B6B6B;
-	--color-accent: #C6A75E;
+  /* Cores Customizadas */
+  --color-dark-bg: #090514;
+  --color-dark-card: #140c24;
+  --color-accent-purple: #8750f7;
+  --color-accent-light: #b4acc4;
+  --color-accent-dark: #2a1454;
+  --color-accent-hover: #733be3;
+  --color-accent-glow: rgba(135, 80, 247, 0.15);
 }
 
 /* ===========================
-   Paleta de Cores Oficial
-=========================== */
+   Estilos Customizados Globais
+   =========================== */
 
 :root {
-	/* Cor de Fundo (Base) */
-	--bg-primary: #FFFBF5;
+  --bg-primary: #090514;
+  --color-accent: #8750f7;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  color-scheme: dark;
+}
 
-	/* Cor Principal (Preto) */
-	--color-black: #0F0F0F;
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: #ffffff;
+}
 
-	/* Tons de Apoio (Neutros) */
-	--gray-100: #F5F5F5;
-	--gray-300: #D1D1D1;
-	--gray-600: #6B6B6B;
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+}
 
-	/* Cor de Destaque (Opcional e discreta) */
-	--accent: #C6A75E;
+/* Scrollbar Customizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-	/* Fontes */
-	--font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
-	--font-serif: var(--font-playfair), Georgia, serif;
+::-webkit-scrollbar-track {
+  background: #090514;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d1136;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8750f7;
+}
+
+/* Efeito de Gradiente de Texto */
+.text-gradient {
+  background: linear-gradient(90deg, #8750f7 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(90deg, #8750f7 0%, #c3a6ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism Card Style */
+.glass-card {
+  background: rgba(20, 12, 36, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(135, 80, 247, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(135, 80, 247, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(135, 80, 247, 0.15);
+}
+
+/* Botão com Gradiente e Borda Animada */
+.btn-gradient {
+  background: linear-gradient(90deg, #8750f7 0%, #2a1454 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #2a1454 0%, #8750f7 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.btn-gradient:hover::before {
+  opacity: 1;
+}
+
+/* Efeito Glow para Ícones e Detalhes */
+.glow-effect {
+  filter: drop-shadow(0 0 8px rgba(135, 80, 247, 0.6));
 }
 
