@@ -67,73 +67,76 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || isOpen
-          ? "bg-dark-bg/80 backdrop-blur-md border-b border-accent-purple/10 py-3 lg:py-4"
-          : "bg-transparent py-5 lg:py-6"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
-        {/* Logo and Contact Email */}
-        <div className="flex items-center gap-4">
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-linear-to-r from-accent-purple to-accent-dark flex items-center justify-center font-bold text-xl text-white shadow-[0_0_15px_rgba(135,80,247,0.3)] transition-transform group-hover:scale-105">
-              E
-            </div>
-            <span className="text-sm font-medium text-accent-light group-hover:text-white transition-colors hidden sm:inline-block lg:hidden xl:inline-block">
-              emanuelmalungo856@gmail.com
-            </span>
-          </a>
-        </div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className={`text-sm font-medium transition-colors hover:text-accent-purple relative py-1 ${
-                activeSection === item.href ? "text-accent-purple" : "text-white"
-              }`}
-            >
-              {item.label}
-              {activeSection === item.href && (
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-accent-purple rounded-full" />
-              )}
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled || isOpen
+            ? "bg-dark-bg/80 backdrop-blur-md border-b border-accent-purple/10 py-3 lg:py-4"
+            : "bg-transparent py-5 lg:py-6"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+          {/* Logo and Contact Email */}
+          <div className="flex items-center gap-4">
+            <a href="#" className="flex items-center gap-3 group">
+              <div className="w-10 h-10 rounded-full bg-linear-to-r from-accent-purple to-accent-dark flex items-center justify-center font-bold text-xl text-white shadow-[0_0_15px_rgba(135,80,247,0.3)] transition-transform group-hover:scale-105">
+                E
+              </div>
+              <span className="text-sm font-medium text-accent-light group-hover:text-white transition-colors hidden sm:inline-block lg:hidden xl:inline-block">
+                emanuelmalungo856@gmail.com
+              </span>
             </a>
-          ))}
-        </nav>
+          </div>
 
-        {/* Contact CTA Button */}
-        <div className="hidden lg:block">
-          <a
-            href="#contact"
-            className="px-6 py-2.5 rounded-full border border-accent-purple text-sm font-semibold text-white hover:bg-accent-purple transition-all duration-300 hover:shadow-[0_0_15px_rgba(135,80,247,0.4)]"
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-8">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className={`text-sm font-medium transition-colors hover:text-accent-purple relative py-1 ${
+                  activeSection === item.href ? "text-accent-purple" : "text-white"
+                }`}
+              >
+                {item.label}
+                {activeSection === item.href && (
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-accent-purple rounded-full" />
+                )}
+              </a>
+            ))}
+          </nav>
+
+          {/* Contact CTA Button */}
+          <div className="hidden lg:block">
+            <a
+              href="#contact"
+              className="px-6 py-2.5 rounded-full border border-accent-purple text-sm font-semibold text-white hover:bg-accent-purple transition-all duration-300 hover:shadow-[0_0_15px_rgba(135,80,247,0.4)]"
+            >
+              Fale Comigo
+            </a>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="p-2 rounded-lg lg:hidden text-white hover:text-accent-purple focus:outline-hidden"
+            aria-label="Toggle menu"
           >
-            Fale Comigo
-          </a>
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
-
-        {/* Mobile menu button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="p-2 rounded-lg lg:hidden text-white hover:text-accent-purple focus:outline-hidden"
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
+      </header>
 
       {/* Mobile Drawer */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            key="mobile-drawer"
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "tween", duration: 0.3, ease: "easeOut" }}
-            className="fixed inset-x-0 top-[64px] bottom-0 z-40 bg-dark-bg/95 backdrop-blur-lg border-t border-accent-purple/10 lg:hidden overflow-y-auto"
+            className="fixed inset-x-0 top-[64px] h-[calc(100vh-64px)] z-40 bg-dark-bg/95 backdrop-blur-lg border-t border-accent-purple/10 lg:hidden overflow-y-auto"
           >
             <motion.nav
               initial="closed"
@@ -146,7 +149,7 @@ export default function Navbar() {
                   transition: { staggerChildren: 0.05, staggerDirection: -1 },
                 },
               }}
-              className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)] gap-6 p-6"
+              className="flex flex-col items-center justify-center min-h-full gap-6 p-6 pb-12"
             >
               {navItems.map((item) => (
                 <motion.div
@@ -198,7 +201,7 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
 
