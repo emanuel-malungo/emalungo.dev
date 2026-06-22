@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface NavItem {
   label: string;
@@ -54,29 +55,40 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-dark-bg/80 backdrop-blur-md border-b border-accent-purple/10 py-4"
-          : "bg-transparent py-6"
+        scrolled || isOpen
+          ? "bg-dark-bg/80 backdrop-blur-md border-b border-accent-purple/10 py-3 lg:py-4"
+          : "bg-transparent py-5 lg:py-6"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo and Contact Email */}
         <div className="flex items-center gap-4">
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-full bg-linear-to-r from-accent-purple to-accent-dark flex items-center justify-center font-bold text-xl text-white shadow-[0_0_15px_rgba(135,80,247,0.3)] transition-transform group-hover:scale-105">
               E
             </div>
-            <span className="text-sm font-medium text-accent-light group-hover:text-white transition-colors hidden md:inline-block">
-              emalungo.dev
+            <span className="text-sm font-medium text-accent-light group-hover:text-white transition-colors hidden sm:inline-block lg:hidden xl:inline-block">
+              emanuelmalungo856@gmail.com
             </span>
           </a>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
             <a
               key={item.label}
@@ -96,9 +108,7 @@ export default function Navbar() {
         {/* Contact CTA Button */}
         <div className="hidden lg:block">
           <a
-            href="https://wa.me/244975446726"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="px-6 py-2.5 rounded-full border border-accent-purple text-sm font-semibold text-white hover:bg-accent-purple transition-all duration-300 hover:shadow-[0_0_15px_rgba(135,80,247,0.4)]"
           >
             Fale Comigo
@@ -116,38 +126,78 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Drawer */}
-      <div
-        className={`fixed inset-0 top-[72px] z-40 bg-dark-bg/95 backdrop-blur-lg border-t border-accent-purple/10 transition-all duration-300 lg:hidden ${
-          isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
-        }`}
-      >
-        <nav className="flex flex-col items-center justify-center h-full gap-8 p-6">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              onClick={() => setIsOpen(false)}
-              className={`text-xl font-semibold transition-colors hover:text-accent-purple ${
-                activeSection === item.href ? "text-accent-purple" : "text-white"
-              }`}
-            >
-              {item.label}
-            </a>
-          ))}
-          <a
-            href="https://wa.me/244975446726"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setIsOpen(false)}
-            className="mt-4 px-8 py-3 rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_20px_rgba(135,80,247,0.5)] transition-all duration-300 w-full text-center max-w-[250px]"
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "tween", duration: 0.3, ease: "easeOut" }}
+            className="fixed inset-x-0 top-[64px] bottom-0 z-40 bg-dark-bg/95 backdrop-blur-lg border-t border-accent-purple/10 lg:hidden overflow-y-auto"
           >
-            Fale Comigo
-          </a>
-          <span className="text-sm text-accent-light mt-8">
-            contato@emalungo.dev
-          </span>
-        </nav>
-      </div>
+            <motion.nav
+              initial="closed"
+              animate="open"
+              variants={{
+                open: {
+                  transition: { staggerChildren: 0.05, delayChildren: 0.1 },
+                },
+                closed: {
+                  transition: { staggerChildren: 0.05, staggerDirection: -1 },
+                },
+              }}
+              className="flex flex-col items-center justify-center min-h-[calc(100vh-64px)] gap-6 p-6"
+            >
+              {navItems.map((item) => (
+                <motion.div
+                  key={item.label}
+                  variants={{
+                    open: { opacity: 1, y: 0 },
+                    closed: { opacity: 0, y: 20 },
+                  }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                >
+                  <a
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-xl font-semibold transition-colors hover:text-accent-purple ${
+                      activeSection === item.href ? "text-accent-purple" : "text-white"
+                    }`}
+                  >
+                    {item.label}
+                  </a>
+                </motion.div>
+              ))}
+              <motion.div
+                variants={{
+                  open: { opacity: 1, y: 0 },
+                  closed: { opacity: 0, y: 20 },
+                }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="w-full flex justify-center mt-4"
+              >
+                <a
+                  href="#contact"
+                  onClick={() => setIsOpen(false)}
+                  className="px-8 py-3 rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_20px_rgba(135,80,247,0.5)] transition-all duration-300 w-full text-center max-w-[250px]"
+                >
+                  Fale Comigo
+                </a>
+              </motion.div>
+              <motion.span
+                variants={{
+                  open: { opacity: 1, y: 0 },
+                  closed: { opacity: 0, y: 20 },
+                }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="text-sm text-accent-light mt-8"
+              >
+                contato@emalungo.dev
+              </motion.span>
+            </motion.nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

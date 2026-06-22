@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-dark-bg min-h-screen text-white relative">
+    <div className="bg-dark-bg min-h-screen text-white relative overflow-x-hidden">
       {/* Decorative background blobs */}
       <div className="absolute top-[5%] left-[-10%] w-[500px] h-[500px] bg-accent-purple/5 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-[40%] right-[-10%] w-[500px] h-[500px] bg-accent-purple/5 rounded-full blur-[150px] pointer-events-none" />

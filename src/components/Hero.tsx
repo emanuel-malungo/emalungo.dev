@@ -110,7 +110,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="flex-1 flex justify-center order-1 md:order-2"
         >
-          <div className="relative w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] group">
+          <div className="relative w-[250px] h-[250px] min-[360px]:w-[280px] min-[360px]:h-[280px] sm:w-[380px] sm:h-[380px] group">
             {/* Background Glow */}
             <div className="absolute inset-0 bg-accent-purple/20 rounded-[40px] blur-xl opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
 

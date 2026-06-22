@@ -111,14 +111,14 @@ export default function Works() {
 
         {/* Categories Tab Filter */}
         <div className="flex justify-center mb-16">
-          <div className="flex items-center gap-2 p-1.5 bg-dark-card border border-accent-purple/10 rounded-full">
+          <div className="flex items-center gap-1 sm:gap-2 p-1.5 bg-dark-card border border-accent-purple/10 rounded-full">
             {categories.map((category) => {
               const isActive = activeCategory === category;
               return (
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category)}
-                  className={`relative px-6 py-2 text-sm font-semibold rounded-full transition-colors duration-300 ${
+                  className={`relative px-4 sm:px-6 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-full transition-colors duration-300 ${
                     isActive ? "text-white" : "text-accent-light hover:text-white"
                   }`}
                 >
