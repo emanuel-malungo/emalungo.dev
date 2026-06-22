@@ -29,13 +29,13 @@ const projects: Project[] = [
   },
   {
     id: "2",
-    title: "VIA - Orientação Vocacional",
-    subtitle: "Education / AI",
-    description: "Aplicativo inteligente que ajuda estudantes a descobrir o curso ideal através de questionário personalizado e análise por IA usando Google Gemini.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    title: "EXPRESSME - Plataforma de Gestão",
+    subtitle: "Web / Full Stack",
+    description: "Aplicação completa para gestão de tarefas, utilizadores, notificações e preferências com API REST em Node.js/TypeScript, frontend em Next.js e app móvel Expo React Native.",
+    tags: ["Node.js", "TypeScript", "Prisma", "Next.js", "Tailwind", "React Native"],
     category: "Web",
-    image: "/assets/images/project-deloitte.png",
-    link: "https://github.com/emanuel-malungo",
+    image: "",
+    link: "https://expressmef.vercel.app/login",
   },
   {
     id: "3",
@@ -45,7 +45,7 @@ const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Firebase"],
     category: "Web",
     image: "/assets/images/project-bigger.png",
-    link: "https://github.com/emanuel-malungo",
+    link: "https://mukanda-one.vercel.app/",
   },
   {
     id: "4",
@@ -69,13 +69,13 @@ const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Higienix",
-    subtitle: "Mobile / App",
-    description: "Aplicação mobile para gerenciar serviços de higiene e limpeza. Painéis para clientes agendarem serviços e funcionários gerenciarem perfis e agendamentos.",
-    tags: ["React Native", "TypeScript", "Expo"],
+    title: "Kivemba",
+    subtitle: "Mobile / Finanças",
+    description: "Aplicativo móvel de gestão de faturamento para pequenas empresas e freelancers gerirem clientes, produtos e cobranças com autenticação, upload de arquivos e biometria.",
+    tags: ["React Native", "TypeScript"],
     category: "Mobile",
-    image: "/assets/images/blog2.png",
-    link: "https://github.com/emanuel-malungo",
+    image: "",
+    link: "#",
   },
 ];
 
