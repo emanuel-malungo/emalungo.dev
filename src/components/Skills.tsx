@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -7,7 +8,29 @@ import {
   Users, 
   RefreshCw, 
   Brain, 
-  Clock 
+  Clock,
+  MonitorSmartphone,
+  Palette,
+  Cpu,
+  Key,
+  Link,
+  Code,
+  Layers,
+  Box,
+  Boxes,
+  Database,
+  AlertTriangle,
+  ShieldCheck,
+  FileText,
+  MousePointer,
+  Play,
+  History,
+  ClipboardList,
+  Bug,
+  CheckCircle,
+  Award,
+  Infinity,
+  Kanban
 } from "lucide-react";
 import { 
   SiHtml5, 
@@ -20,14 +43,19 @@ import {
   SiExpo, 
   SiFigma,
   SiNodedotjs, 
+  SiExpress,
+  SiNestjs,
   SiPrisma, 
+  SiPostgresql,
   SiMysql, 
-  SiFirebase, 
-  SiCplusplus, 
-  SiGnubash, 
   SiGit, 
   SiGithub, 
-  SiDocker 
+  SiGithubactions,
+  SiDocker,
+  SiLinux,
+  SiGnubash,
+  SiPostman,
+  SiJira
 } from "react-icons/si";
 
 interface SoftSkill {
@@ -81,36 +109,69 @@ interface HardSkillGroup {
 
 const hardSkillsGroups: HardSkillGroup[] = [
   {
-    category: "Frontend & Design",
+    category: "Frontend",
     skills: [
       { name: "HTML5", icon: <SiHtml5 className="text-[#E34F26]" /> },
       { name: "CSS3", icon: <SiCss className="text-[#1572B6]" /> },
       { name: "JavaScript", icon: <SiJavascript className="text-[#F7DF1E]" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
-      { name: "TailwindCSS", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
       { name: "React.js", icon: <SiReact className="text-[#61DAFB]" style={{ animation: "spin 15s linear infinite" }} /> },
       { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+      { name: "React Native", icon: <SiReact className="text-[#61DAFB]" /> },
       { name: "Expo", icon: <SiExpo className="text-white" /> },
+      { name: "TailwindCSS", icon: <SiTailwindcss className="text-[#06B6D4]" /> },
+      { name: "Responsive Design", icon: <MonitorSmartphone className="text-[#A855F7]" /> },
+      { name: "UI/UX", icon: <Palette className="text-[#EC4899]" /> },
       { name: "Figma", icon: <SiFigma className="text-[#F24E1E]" /> },
     ],
   },
   {
-    category: "Backend & Database",
+    category: "Backend & Software Engineering",
     skills: [
       { name: "Node.js", icon: <SiNodedotjs className="text-[#339933]" /> },
-      { name: "Prisma", icon: <SiPrisma className="text-white" /> },
+      { name: "Express.js", icon: <SiExpress className="text-white" /> },
+      { name: "NestJS", icon: <SiNestjs className="text-[#E0234E]" /> },
+      { name: "REST APIs", icon: <Cpu className="text-[#3B82F6]" /> },
+      { name: "Prisma ORM", icon: <SiPrisma className="text-white" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-[#4169E1]" /> },
       { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> },
-      { name: "Firebase", icon: <SiFirebase className="text-[#FFCA28]" /> },
+      { name: "JWT Authentication", icon: <Key className="text-[#10B981]" /> },
+      { name: "API Integration", icon: <Link className="text-[#F59E0B]" /> },
+      { name: "Clean Code", icon: <Code className="text-[#14B8A6]" /> },
+      { name: "Clean Architecture", icon: <Layers className="text-[#6366F1]" /> },
+      { name: "SOLID", icon: <Box className="text-[#EF4444]" /> },
+      { name: "Design Patterns", icon: <Boxes className="text-[#EC4899]" /> },
+      { name: "Repository Pattern", icon: <Database className="text-[#8B5CF6]" /> },
+      { name: "Error Handling", icon: <AlertTriangle className="text-[#F59E0B]" /> },
+      { name: "Validation", icon: <ShieldCheck className="text-[#10B981]" /> },
+      { name: "Software Documentation", icon: <FileText className="text-[#6B7280]" /> },
     ],
   },
   {
-    category: "Systems & Tools",
+    category: "Quality Assurance (QA)",
     skills: [
-      { name: "C / C++", icon: <SiCplusplus className="text-[#00599C]" /> },
-      { name: "Shell Script", icon: <SiGnubash className="text-white" /> },
+      { name: "Manual Testing", icon: <MousePointer className="text-[#3B82F6]" /> },
+      { name: "Functional Testing", icon: <Play className="text-[#10B981]" /> },
+      { name: "Regression Testing", icon: <History className="text-[#F59E0B]" /> },
+      { name: "API Testing (Postman)", icon: <SiPostman className="text-[#FF6C37]" /> },
+      { name: "Test Cases", icon: <ClipboardList className="text-[#EC4899]" /> },
+      { name: "Bug Reporting", icon: <Bug className="text-[#EF4444]" /> },
+      { name: "Requirements Validation", icon: <CheckCircle className="text-[#14B8A6]" /> },
+      { name: "Software Quality Assurance", icon: <Award className="text-[#8B5CF6]" /> },
+    ],
+  },
+  {
+    category: "DevOps & Tools",
+    skills: [
       { name: "Git", icon: <SiGit className="text-[#F05032]" /> },
       { name: "GitHub", icon: <SiGithub className="text-white" /> },
+      { name: "GitHub Actions", icon: <SiGithubactions className="text-[#2088FF]" /> },
       { name: "Docker", icon: <SiDocker className="text-[#2496ED]" /> },
+      { name: "CI/CD", icon: <Infinity className="text-[#10B981]" /> },
+      { name: "Linux", icon: <SiLinux className="text-[#FCC624]" /> },
+      { name: "Shell Script", icon: <SiGnubash className="text-white" /> },
+      { name: "Jira", icon: <SiJira className="text-[#0052CC]" /> },
+      { name: "Taiga", icon: <Kanban className="text-[#00C5A2]" /> },
     ],
   },
 ];
@@ -120,17 +181,17 @@ export default function Skills() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.05,
+        staggerChildren: 0.03,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 15 },
+    hidden: { opacity: 0, y: 12 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
+      transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
     },
   };
 
