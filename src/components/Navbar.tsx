@@ -69,14 +69,14 @@ export default function Navbar() {
             <div className="w-10 h-10 rounded-full bg-linear-to-r from-accent-purple to-accent-dark flex items-center justify-center font-bold text-xl text-white shadow-[0_0_15px_rgba(135,80,247,0.3)] transition-transform group-hover:scale-105">
               E
             </div>
-            <span className="text-sm font-medium text-accent-light group-hover:text-white transition-colors hidden sm:inline-block">
-              emanuelmalungo856@gmail.com
+            <span className="text-sm font-medium text-accent-light group-hover:text-white transition-colors hidden md:inline-block">
+              emalungo.dev
             </span>
           </a>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
           {navItems.map((item) => (
             <a
               key={item.label}
@@ -94,9 +94,11 @@ export default function Navbar() {
         </nav>
 
         {/* Contact CTA Button */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <a
-            href="#contact"
+            href="https://wa.me/244975446726"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-2.5 rounded-full border border-accent-purple text-sm font-semibold text-white hover:bg-accent-purple transition-all duration-300 hover:shadow-[0_0_15px_rgba(135,80,247,0.4)]"
           >
             Fale Comigo
@@ -106,7 +108,7 @@ export default function Navbar() {
         {/* Mobile menu button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="p-2 rounded-lg md:hidden text-white hover:text-accent-purple focus:outline-hidden"
+          className="p-2 rounded-lg lg:hidden text-white hover:text-accent-purple focus:outline-hidden"
           aria-label="Toggle menu"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -115,7 +117,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed inset-0 top-[72px] z-40 bg-dark-bg/95 backdrop-blur-lg border-t border-accent-purple/10 transition-all duration-300 md:hidden ${
+        className={`fixed inset-0 top-[72px] z-40 bg-dark-bg/95 backdrop-blur-lg border-t border-accent-purple/10 transition-all duration-300 lg:hidden ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
@@ -133,7 +135,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://wa.me/244975446726"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
             className="mt-4 px-8 py-3 rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_20px_rgba(135,80,247,0.5)] transition-all duration-300 w-full text-center max-w-[250px]"
           >
