@@ -42,14 +42,14 @@ export default function Hero() {
             variants={itemVariants}
             className="text-lg md:text-xl font-semibold text-white mb-2"
           >
-            Olá, eu sou o Emanuel Malungo
+            Olá, eu sou o
           </motion.h4>
           <motion.h1
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight"
           >
-            <span className="text-gradient-purple block">Desenvolvedor</span>
-            <span className="text-white">Full Stack</span>
+            <span className="text-gradient-purple block">Emanuel Malungo</span>
+            <span className="text-white block mt-2 text-2xl sm:text-3xl lg:text-4xl">Desenvolvedor Full Stack</span>
           </motion.h1>
           <motion.p
             variants={itemVariants}
