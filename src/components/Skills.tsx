@@ -10,54 +10,8 @@ interface Skill {
 
 const skills: Skill[] = [
   {
-    name: "Figma",
+    name: "React.js",
     percentage: "92%",
-    svg: (
-      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
-        <path d="M37.5 75C44.4 75 50 69.4 50 62.5V50H37.5C30.6 50 25 55.6 25 62.5C25 69.4 30.6 75 37.5 75Z" fill="#0ACF83" />
-        <path d="M25 37.5C25 30.6 30.6 25 37.5 25H50V50H37.5C30.6 50 25 44.4 25 37.5Z" fill="#F24E1E" />
-        <path d="M50 25H62.5C69.4 25 75 30.6 75 37.5C75 44.4 69.4 50 62.5 50H50V25Z" fill="#FF7262" />
-        <path d="M75 62.5C75 69.4 69.4 75 62.5 75C55.6 75 50 69.4 50 62.5V50H62.5C69.4 50 75 55.6 75 62.5Z" fill="#1ABCFE" />
-        <path d="M50 50V62.5C50 69.4 44.4 75 37.5 75C30.6 75 25 69.4 25 62.5V50H50Z" fill="#A259FF" />
-      </svg>
-    ),
-  },
-  {
-    name: "Sketch",
-    percentage: "80%",
-    svg: (
-      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
-        <path d="M50 85L85 45L75 15H25L15 45L50 85Z" fill="#FDD231" />
-        <path d="M50 85L15 45L25 15H50V85Z" fill="#FDB32A" />
-        <path d="M50 15H25L15 45L50 45V15Z" fill="#FCA326" />
-        <path d="M50 15H75L85 45L50 45V15Z" fill="#FDAD2E" />
-        <path d="M50 85L85 45L75 15H50V85Z" fill="#F3C12C" />
-      </svg>
-    ),
-  },
-  {
-    name: "Adobe XD",
-    percentage: "85%",
-    svg: (
-      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
-        <rect width="100" height="100" rx="16" fill="#470137" />
-        <path d="M32 30H46C52.6 30 57 34.4 57 41C57 47.6 52.6 52 46 52H40V70H32V30ZM40 45H46C48.8 45 50 43.8 50 41C50 38.2 48.8 37 46 37H40V45Z" fill="#FF61F6" />
-        <path d="M60 45C60 36 65 30 73 30C81 30 86 36 86 45V55C86 64 81 70 73 70C65 70 60 64 60 55V45ZM67.5 55C67.5 61 69.5 64 73 64C76.5 64 78.5 61 78.5 55V45C78.5 39 76.5 36 73 36C69.5 36 67.5 39 67.5 45V55Z" fill="#FF61F6" />
-      </svg>
-    ),
-  },
-  {
-    name: "WordPress",
-    percentage: "90%",
-    svg: (
-      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
-        <path d="M50 95C25.1 95 5 74.9 5 50C5 25.1 25.1 5 50 5C74.9 5 95 25.1 95 50C95 74.9 74.9 95 50 95ZM50 8.5C27.1 8.5 8.5 27.1 8.5 50C8.5 59.3 11.6 68 16.7 75L30.5 37.1H37.8L28.1 63.8L38.4 91.5C42.1 92.5 46 93 50 93C54 93 57.9 92.5 61.6 91.5L71.9 63.8L62.2 37.1H69.5L83.3 75C88.4 68 91.5 59.3 91.5 50C91.5 27.1 72.9 8.5 50 8.5ZM50 20.3C44.7 20.3 40.3 24.3 40.3 29C40.3 32.5 42 35.1 44.5 37.1L37.1 57.3L29.7 37.1C32.2 35.1 33.9 32.5 33.9 29C33.9 24.3 29.5 20.3 24.2 20.3C22 20.3 20 21.1 18.5 22.4C26.5 13.8 37.7 8.5 50 8.5C62.3 8.5 73.5 13.8 81.5 22.4C80 21.1 78 20.3 75.8 20.3C70.5 20.3 66.1 24.3 66.1 29C66.1 32.5 67.8 35.1 70.3 37.1L62.9 57.3L55.5 37.1C58 35.1 59.7 32.5 59.7 29C59.7 24.3 55.3 20.3 50 20.3Z" fill="#21759B" />
-      </svg>
-    ),
-  },
-  {
-    name: "React",
-    percentage: "89%",
     svg: (
       <svg className="w-10 h-10 animate-spin" style={{ animationDuration: '20s' }} viewBox="0 0 100 100" fill="none">
         <path d="M50 42C54.4 42 58 38.4 58 34C58 29.6 54.4 26 50 26C45.6 26 42 29.6 42 34C42 38.4 45.6 42 50 42Z" fill="#61DAFB" />
@@ -68,13 +22,75 @@ const skills: Skill[] = [
     ),
   },
   {
-    name: "JavaScript",
-    percentage: "93%",
+    name: "Next.js",
+    percentage: "90%",
     svg: (
       <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
-        <rect width="100" height="100" rx="16" fill="#F7DF1E" />
-        <path d="M68 62C68 53.8 74.2 52 79.2 52C84.2 52 86 54.4 86 58V62H79V58.5C79 57.5 78.2 56.8 77.2 56.8C76.2 56.8 75.5 57.5 75.5 58.5V64C75.5 67.3 78.2 70 81.5 70C84.8 70 87.5 67.3 87.5 64V46H81V50.5C79.5 48 77 46.5 73.5 46.5C65.5 46.5 61 52.5 61 62C61 71.5 65.5 77.5 73.5 77.5C77 77.5 79.5 76 81 73.5V78H87.5V73.5C87.5 76 90 77.5 93 77.5C96.5 77.5 99 75 99 71.5V62H92.5V71C92.5 72 91.8 72.8 90.8 72.8C89.8 72.8 89 72 89 71V62H68Z" fill="#000000" className="hidden" />
-        <path d="M50 70C53 70 56 68.8 57.8 66L62.8 69.2C59.8 74.2 55.4 76.5 50 76.5C41 76.5 35 70.5 35 61C35 51.5 41 45.5 50 45.5C55.4 45.5 59.8 47.8 62.8 52.8L57.8 56C56 53.2 53 52 50 52C45.2 52 42.2 55.5 42.2 61C42.2 66.5 45.2 70 50 70ZM72 65C72 70 68 73 63.8 73C59.6 73 57.5 71 57.5 67H63.5C63.5 68 64.5 68.5 65.8 68.5C67 68.5 67.8 68 67.8 66.8C67.8 65 62 65.5 62 60.5C62 57.5 64.5 55 69 55C73.5 55 75.8 57.5 75.8 61.5H69.8C69.8 60.5 69 60 67.8 60C66.6 60 65.8 60.5 65.8 61.5C65.8 63 72 62.2 72 65.5V65Z" fill="#000000" />
+        <circle cx="50" cy="50" r="47" stroke="white" strokeWidth="6" />
+        <path d="M75 70L42.5 30H35V70H41V40.5L70.5 76.5C72 74.5 73.5 72.5 75 70Z" fill="white" />
+        <rect x="63" y="30" width="6" height="40" fill="white" />
+      </svg>
+    ),
+  },
+  {
+    name: "Node.js",
+    percentage: "88%",
+    svg: (
+      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
+        <path d="M50 10L15 30.2V70.8L50 91L85 70.8V30.2L50 10ZM75.5 65.3L50 80L24.5 65.3V35.7L50 21L75.5 35.7V65.3Z" fill="#339933" />
+        <path d="M50 31L35 39.7V57.3L50 66L65 57.3V39.7L50 31ZM59.5 54.2L50 59.7L40.5 54.2V45.8L50 40.3L59.5 45.8V54.2Z" fill="#339933" />
+      </svg>
+    ),
+  },
+  {
+    name: "TypeScript",
+    percentage: "90%",
+    svg: (
+      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
+        <rect width="100" height="100" rx="16" fill="#3178C6" />
+        <path d="M70 54.5C70 51.5 68 50.5 65.2 50.5C62.4 50.5 61 51.5 61 53.5C61 55.5 62.5 56.5 65.5 57.5C69.5 58.8 72.5 60.5 72.5 65C72.5 69.5 69 72.5 63.5 72.5C58 72.5 55 69.5 55 65H60.5C60.5 67 61.5 67.5 63.5 67.5C65.5 67.5 66.5 66.5 66.5 65.5C66.5 64.5 65.5 64 63.5 63.2C59.5 61.8 56.5 60 56.5 55.5C56.5 51.5 59.5 48.5 65 48.5C70.5 48.5 73.5 51.5 73.5 55.5H68V54.5H70ZM38 72.5V36H24V30H60V36H46V72.5H38Z" fill="white" />
+      </svg>
+    ),
+  },
+  {
+    name: "PostgreSQL",
+    percentage: "85%",
+    svg: (
+      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
+        <path d="M50 8C26.8 8 8 26.8 8 50C8 73.2 26.8 92 50 92C73.2 92 92 73.2 92 50C92 26.8 73.2 8 50 8ZM73.5 51.5C73.5 61.2 66.8 68.5 58 68.5H48V54H41V47H48V40H58C66.8 40 73.5 47.2 73.5 57V51.5Z" fill="#336791" />
+      </svg>
+    ),
+  },
+  {
+    name: "Docker",
+    percentage: "80%",
+    svg: (
+      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
+        <path d="M92 48C92 38.6 85.3 32 77 32C76 32 75.1 32.1 74.2 32.4C71.3 26.2 64.8 22 57.5 22C51.5 22 46.1 24.8 42.7 29.5C40.6 28.5 38.3 28 35.8 28C28.2 28 22 34.2 22 41.8C22 42.6 22.1 43.4 22.2 44.1C13.2 45.4 6 53.2 6 62.7C6 72.8 14.2 81 24.3 81H78.7C86 81 92 75 92 67.7V48ZM30 52H38V60H30V52ZM42 52H50V60H42V52ZM54 52H62V60H54V52ZM66 52H74V60H66V52ZM30 40H38V48H30V40ZM42 40H50V48H42V40ZM54 40H62V48H54V40ZM30 28H38V36H30V28Z" fill="#2496ED" />
+      </svg>
+    ),
+  },
+  {
+    name: "React Native",
+    percentage: "85%",
+    svg: (
+      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
+        <rect width="100" height="100" rx="16" fill="#000020" />
+        <path d="M50 20L80 37.3V72L50 89.3L20 72V37.3L50 20ZM50 27.5L28.7 39.8V64.5L50 76.8L71.3 64.5V39.8L50 27.5Z" fill="#FFFFFF" />
+        <path d="M50 37L63.5 44.8V60.5L50 68.3L36.5 60.5V44.8L50 37Z" fill="#FFFFFF" />
+      </svg>
+    ),
+  },
+  {
+    name: "Figma",
+    percentage: "82%",
+    svg: (
+      <svg className="w-10 h-10" viewBox="0 0 100 100" fill="none">
+        <path d="M37.5 75C44.4 75 50 69.4 50 62.5V50H37.5C30.6 50 25 55.6 25 62.5C25 69.4 30.6 75 37.5 75Z" fill="#0ACF83" />
+        <path d="M25 37.5C25 30.6 30.6 25 37.5 25H50V50H37.5C30.6 50 25 44.4 25 37.5Z" fill="#F24E1E" />
+        <path d="M50 25H62.5C69.4 25 75 30.6 75 37.5C75 44.4 69.4 50 62.5 50H50V25Z" fill="#FF7262" />
+        <path d="M75 62.5C75 69.4 69.4 75 62.5 75C55.6 75 50 69.4 50 62.5V50H62.5C69.4 50 75 55.6 75 62.5Z" fill="#1ABCFE" />
+        <path d="M50 50V62.5C50 69.4 44.4 75 37.5 75C30.6 75 25 69.4 25 62.5V50H50Z" fill="#A259FF" />
       </svg>
     ),
   },
@@ -96,7 +112,7 @@ export default function Skills() {
       opacity: 1,
       scale: 1,
       y: 0,
-      transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
+      transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
     },
   };
 
@@ -115,7 +131,7 @@ export default function Skills() {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 text-gradient-purple inline-block"
           >
-            My Skills
+            Minhas Competências
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -124,7 +140,7 @@ export default function Skills() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-accent-light"
           >
-            We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+            Trabalho com as melhores tecnologias do mercado para entregar soluções robustas, escaláveis e de alta qualidade técnica.
           </motion.p>
         </div>
 
@@ -134,7 +150,7 @@ export default function Skills() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 justify-center"
         >
           {skills.map((skill) => (
             <motion.div

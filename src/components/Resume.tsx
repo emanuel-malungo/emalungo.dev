@@ -13,54 +13,36 @@ interface TimelineItem {
 const experienceItems: TimelineItem[] = [
   {
     id: "exp-1",
-    duration: "2022 - Present",
-    title: "Lead Developer",
-    subtitle: "Blockdots, London",
+    duration: "2025 - Presente",
+    title: "Desenvolvedor Full Stack Freelancer",
+    subtitle: "Projetos Independentes (TRIMID, Mpamba)",
   },
   {
     id: "exp-2",
-    duration: "2021 - 2022",
-    title: "Full Stack Web Developer",
-    subtitle: "Parsons, The New School",
+    duration: "2023 - 2025",
+    title: "Full Stack Developer",
+    subtitle: "ITech Solutions, Angola",
   },
   {
     id: "exp-3",
-    duration: "2020 - 2021",
-    title: "UI Designer",
-    subtitle: "House of Life, Leeds",
-  },
-  {
-    id: "exp-4",
-    duration: "2018 - 2020",
-    title: "Junior Graphics Designer",
-    subtitle: "Theme Junction, Russia",
+    duration: "2024 - Presente",
+    title: "Contribuidor Open Source",
+    subtitle: "Comunidade GitHub (Top 6 em Angola)",
   },
 ];
 
 const educationItems: TimelineItem[] = [
   {
     id: "edu-1",
-    duration: "2020 - 2023",
-    title: "Programming Course",
-    subtitle: "Harvard University",
+    duration: "2024 - Presente",
+    title: "Engenharia de Software",
+    subtitle: "42 Luanda, Angola",
   },
   {
     id: "edu-2",
-    duration: "2016 - 2020",
-    title: "Graphic Design Course",
-    subtitle: "University of Art",
-  },
-  {
-    id: "edu-3",
-    duration: "2012 - 2015",
-    title: "Web Design Course",
-    subtitle: "University of California",
-  },
-  {
-    id: "edu-4",
-    duration: "2010 - 2011",
-    title: "Design & Technology",
-    subtitle: "Parsons, The New School",
+    duration: "2021 - 2023",
+    title: "Especialização em Desenvolvimento & QA",
+    subtitle: "Estudos Independentes, Bootcamps",
   },
 ];
 
@@ -99,7 +81,7 @@ export default function Resume() {
                 <Briefcase className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-                My Experience
+                Minha Experiência
               </h2>
             </div>
 
@@ -136,7 +118,7 @@ export default function Resume() {
                 <GraduationCap className="w-6 h-6" />
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-                My Education
+                Minha Formação
               </h2>
             </div>
 

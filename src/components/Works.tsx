@@ -16,41 +16,41 @@ interface Project {
 const projects: Project[] = [
   {
     id: "1",
-    title: "Deloitte Website Redesign",
-    category: "UX/UI",
+    title: "Sistema de Gestão Escolar — INFQE",
+    category: "Frontend",
     image: "/assets/images/project-deloitte.png",
     link: "#",
   },
   {
     id: "2",
-    title: "Grow Business Analytics Platform",
-    category: "Branding",
+    title: "Distribuição de Livros Didáticos — SGMLD",
+    category: "Fullstack",
     image: "/assets/images/project-grow.png",
     link: "#",
   },
   {
     id: "3",
-    title: "Sebastian D'Amargo Mobile App",
-    category: "Apps",
-    image: "/assets/images/project-sebastian.png",
+    title: "Plataforma Multimédia — TRIMID",
+    category: "UI/UX",
+    image: "/assets/images/project-bigger.png",
     link: "#",
   },
   {
     id: "4",
-    title: "Bigger, Bolder and Better Campaign",
-    category: "UX/UI",
-    image: "/assets/images/project-bigger.png",
+    title: "Sistema de Gestão Financeira — Mpamba",
+    category: "Fullstack",
+    image: "/assets/images/project-sebastian.png",
     link: "#",
   },
 ];
 
-const categories = ["All", "UX/UI", "Branding", "Apps"];
+const categories = ["Todos", "Fullstack", "Frontend", "UI/UX"];
 
 export default function Works() {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("Todos");
 
   const filteredProjects =
-    activeCategory === "All"
+    activeCategory === "Todos"
       ? projects
       : projects.filter((project) => project.category === activeCategory);
 
@@ -66,7 +66,7 @@ export default function Works() {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 text-gradient-purple inline-block"
           >
-            My Recent Works
+            Meus Projetos Recentes
           </motion.h2>
         </div>
 
@@ -106,7 +106,7 @@ export default function Works() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
                 key={project.id}
                 className="group relative bg-dark-card border border-accent-purple/10 rounded-3xl overflow-hidden shadow-lg p-6 flex flex-col justify-between"
               >
@@ -148,3 +148,4 @@ export default function Works() {
     </section>
   );
 }
+

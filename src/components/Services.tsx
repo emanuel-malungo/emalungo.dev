@@ -13,27 +13,27 @@ interface ServiceItem {
 const servicesList: ServiceItem[] = [
   {
     id: "01",
-    title: "Branding Design",
+    title: "Desenvolvimento Full Stack",
     description:
-      "I break down complex user experience problems to create integrity-focused solutions that connect billions of people.",
+      "Criação de APIs robustas, arquitetura escalável e sistemas de faturação/gestão integrados com bancos de dados relacionais.",
   },
   {
     id: "02",
-    title: "UI/UX Design",
+    title: "Desenvolvimento Frontend",
     description:
-      "I break down complex user experience problems to create integrity-focused solutions that connect billions of people.",
+      "Construção de interfaces de utilizador interativas, modernas e responsivas utilizando React, Next.js e TailwindCSS.",
   },
   {
     id: "03",
-    title: "Web Design",
+    title: "Desenvolvimento Mobile",
     description:
-      "I break down complex user experience problems to create integrity-focused solutions that connect billions of people.",
+      "Criação de aplicativos nativos de alta performance para Android e iOS com React Native e Expo.",
   },
   {
     id: "04",
-    title: "App Design",
+    title: "Garantia de Qualidade (QA)",
     description:
-      "I break down complex user experience problems to create integrity-focused solutions that connect billions of people.",
+      "Execução de testes funcionais, manuais e testes de APIs com Postman para garantir a estabilidade e qualidade do código.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 text-gradient-purple inline-block"
           >
-            My Quality Services
+            Meus Serviços de Qualidade
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -61,8 +61,7 @@ export default function Services() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-accent-light"
           >
-            We put your ideas and thus your wishes in the form of a unique web
-            project that inspires you and your customers.
+            Transformo as suas ideias e requisitos de negócio em aplicações digitais únicas, eficientes e de alto desempenho técnico.
           </motion.p>
         </div>
 

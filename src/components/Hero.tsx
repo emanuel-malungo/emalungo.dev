@@ -20,7 +20,7 @@ export default function Hero() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
     },
   };
 
@@ -42,20 +42,20 @@ export default function Hero() {
             variants={itemVariants}
             className="text-lg md:text-xl font-semibold text-white mb-2"
           >
-            I am Gerold
+            Olá, eu sou o Emanuel Malungo
           </motion.h4>
           <motion.h1
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight"
           >
-            <span className="text-gradient-purple block">Web Developer +</span>
-            <span className="text-white">UX Designer</span>
+            <span className="text-gradient-purple block">Desenvolvedor</span>
+            <span className="text-white">Full Stack</span>
           </motion.h1>
           <motion.p
             variants={itemVariants}
             className="text-base sm:text-lg text-accent-light max-w-xl mb-8 leading-relaxed"
           >
-            I break down complex user experience problems to create integrity-focused solutions that connect billions of people.
+            Desenvolvedor de Software com mais de 3 anos de experiência no desenvolvimento de aplicações web, mobile e sistemas empresariais. Estudante de Engenharia de Software na 42 Luanda.
           </motion.p>
 
           {/* Call to Actions */}
@@ -67,7 +67,7 @@ export default function Hero() {
               href="#"
               className="px-8 py-3.5 rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold flex items-center gap-2 shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_25px_rgba(135,80,247,0.5)] transition-all duration-300 transform hover:-translate-y-0.5"
             >
-              Download CV <Download className="w-4 h-4" />
+              Descarregar CV <Download className="w-4 h-4" />
             </a>
 
             {/* Social Icons */}
@@ -159,10 +159,10 @@ export default function Hero() {
           className="grid grid-cols-2 lg:grid-cols-4 gap-8 py-10 border-t border-accent-purple/10"
         >
           {[
-            { value: "14", label: "Years of Experience" },
-            { value: "50+", label: "Projects Completed" },
-            { value: "1.5K", label: "Happy Clients" },
-            { value: "14", label: "Years of Experience" }, // Matches design template, keeping it consistent
+            { value: "3+", label: "Anos de Experiência" },
+            { value: "10+", label: "Projetos Concluídos" },
+            { value: "Top 6", label: "GitHub em Angola" },
+            { value: "42", label: "Estudante 42 Luanda" },
           ].map((stat, index) => (
             <div key={index} className="flex flex-col sm:flex-row items-center md:items-start lg:items-center gap-4 text-center sm:text-left">
               <span className="text-4xl sm:text-5xl font-extrabold text-white leading-none">

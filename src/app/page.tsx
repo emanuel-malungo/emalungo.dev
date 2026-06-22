@@ -6,9 +6,6 @@ import Services from "@/components/Services";
 import Works from "@/components/Works";
 import Resume from "@/components/Resume";
 import Skills from "@/components/Skills";
-import Testimonials from "@/components/Testimonials";
-import Blogs from "@/components/Blogs";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -29,9 +26,6 @@ export default function Home() {
         <Works />
         <Resume />
         <Skills />
-        <Testimonials />
-        <Blogs />
-        <Contact />
       </main>
 
       {/* Global Footer */}
