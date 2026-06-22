@@ -48,10 +48,10 @@ export default function Hero() {
           </motion.h4>
           <motion.h1
             variants={itemVariants}
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight"
+            className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight"
           >
             <span className="text-gradient-purple block">Emanuel Malungo</span>
-            <span className="text-white block mt-2 text-2xl sm:text-3xl lg:text-4xl">Desenvolvedor Full Stack</span>
+            <span className="text-white block mt-2 text-xl sm:text-3xl lg:text-4xl">Desenvolvedor Full Stack</span>
           </motion.h1>
           <motion.p
             variants={itemVariants}
@@ -69,7 +69,7 @@ export default function Hero() {
               href="/assets/doc/emalungo_cv_resumo.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3.5 rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold flex items-center gap-2 shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_25px_rgba(135,80,247,0.5)] transition-all duration-300 transform hover:-translate-y-0.5"
+              className="px-6 py-3 sm:px-8 sm:py-3.5 text-sm sm:text-base rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold flex items-center gap-2 shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_25px_rgba(135,80,247,0.5)] transition-all duration-300 transform hover:-translate-y-0.5"
             >
               Descarregar CV <Download className="w-4 h-4" />
             </a>
@@ -151,10 +151,10 @@ export default function Hero() {
             { value: "42", label: "Estudante 42 Luanda" },
           ].map((stat, index) => (
             <div key={index} className="flex flex-col sm:flex-row items-center md:items-start lg:items-center gap-4 text-center sm:text-left">
-              <span className="text-4xl sm:text-5xl font-extrabold text-white leading-none">
+              <span className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-none">
                 {stat.value}
               </span>
-              <span className="text-sm font-medium text-accent-light max-w-[120px] leading-tight">
+              <span className="text-xs sm:text-sm font-medium text-accent-light max-w-[120px] leading-tight">
                 {stat.label}
               </span>
             </div>

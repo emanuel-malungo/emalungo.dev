@@ -212,7 +212,7 @@ export default function Works() {
             href="https://github.com/emanuel-malungo"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3.5 rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold flex items-center gap-2 shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_25px_rgba(135,80,247,0.5)] transition-all duration-300 transform hover:-translate-y-0.5 group"
+            className="px-6 py-3 sm:px-8 sm:py-3.5 text-sm sm:text-base rounded-full bg-linear-to-r from-accent-purple to-accent-dark text-white font-semibold flex items-center gap-2 shadow-[0_0_15px_rgba(135,80,247,0.3)] hover:shadow-[0_0_25px_rgba(135,80,247,0.5)] transition-all duration-300 transform hover:-translate-y-0.5 group"
           >
             Ver todos projectos 
             <SiGithub className="w-5 h-5 transition-transform group-hover:scale-110" />

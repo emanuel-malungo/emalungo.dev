@@ -303,12 +303,12 @@ export default function Skills() {
                           y: -3,
                           transition: { duration: 0.2 },
                         }}
-                        className="flex items-center gap-3 px-4 py-2.5 bg-dark-card border border-accent-purple/10 rounded-xl hover:border-accent-purple/40 hover:bg-dark-card/90 transition-all duration-300 group/item cursor-default shadow-[0_4px_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(135,80,247,0.1)]"
+                        className="flex items-center gap-2 sm:gap-3 px-3 py-2 sm:px-4 sm:py-2.5 bg-dark-card border border-accent-purple/10 rounded-xl hover:border-accent-purple/40 hover:bg-dark-card/90 transition-all duration-300 group/item cursor-default shadow-[0_4px_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(135,80,247,0.1)]"
                       >
-                        <span className="text-xl">
+                        <span className="text-lg sm:text-xl">
                           {skill.icon}
                         </span>
-                        <span className="text-sm font-semibold text-accent-light group-hover/item:text-white transition-colors duration-300">
+                        <span className="text-xs sm:text-sm font-semibold text-accent-light group-hover/item:text-white transition-colors duration-300">
                           {skill.name}
                         </span>
                       </motion.div>
