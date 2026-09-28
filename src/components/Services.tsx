@@ -61,7 +61,7 @@ export default function Services() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-sm sm:text-base text-accent-light px-4 sm:px-0"
           >
-            Desenvolvendo soluções digitais robustas, eficientes e escaláveis através de sólidas práticas de engenharia de software.
+            Aplicações web, APIs e sistemas desenvolvidos com foco em eficiência e desempenho.
           </motion.p>
         </div>
 
