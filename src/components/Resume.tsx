@@ -22,13 +22,7 @@ const experienceItems: TimelineItem[] = [
     duration: "2023 - 2025",
     title: "Full Stack Developer",
     subtitle: "ITech Solutions, Angola",
-  },
-  {
-    id: "exp-3",
-    duration: "2024 - Presente",
-    title: "Contribuidor Open Source",
-    subtitle: "Comunidade GitHub (Top 6 em Angola)",
-  },
+  }
 ];
 
 const educationItems: TimelineItem[] = [

@@ -14,8 +14,6 @@ const navItems: NavItem[] = [
   { label: "Projetos", href: "#works" },
   { label: "Currículo", href: "#resume" },
   { label: "Competências", href: "#skills" },
-  { label: "Depoimentos", href: "#testimonials" },
-  { label: "Contacto", href: "#contact" },
 ];
 
 export default function Navbar() {

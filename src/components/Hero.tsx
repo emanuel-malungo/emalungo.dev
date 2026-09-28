@@ -57,7 +57,7 @@ export default function Hero() {
             variants={itemVariants}
             className="text-base sm:text-lg text-accent-light max-w-xl mb-8 leading-relaxed"
           >
-            Desenvolvedor de Software com mais de 3 anos de experiência no desenvolvimento de aplicações web, mobile e sistemas empresariais. Estudante de Engenharia de Software na 42 Luanda.
+            Desenvolvedor Full Stack com mais de 3 anos de experiência na criação de aplicações web, APIs REST, bases de dados (MySQL/PostgreSQL) e sistemas empresariais. Estudante na 42 Luanda.
           </motion.p>
 
           {/* Call to Actions */}

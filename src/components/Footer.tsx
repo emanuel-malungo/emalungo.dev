@@ -18,8 +18,6 @@ export default function Footer() {
             { label: "Projetos", href: "#works" },
             { label: "Currículo", href: "#resume" },
             { label: "Competências", href: "#skills" },
-            { label: "Depoimentos", href: "#testimonials" },
-            { label: "Contacto", href: "#contact" },
           ].map((link) => (
             <a
               key={link.label}
