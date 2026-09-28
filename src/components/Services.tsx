@@ -13,27 +13,27 @@ interface ServiceItem {
 const servicesList: ServiceItem[] = [
   {
     id: "01",
-    title: "Desenvolvimento Full Stack",
+    title: "Engenharia Backend & APIs REST",
     description:
-      "Criação de APIs robustas, arquitetura escalável e sistemas de faturação/gestão integrados com bancos de dados relacionais.",
+      "Desenvolvimento de APIs RESTful robustas com PHP (Laravel) e Node.js, focando na integração de sistemas, segurança e arquitecturas escaláveis.",
   },
   {
     id: "02",
-    title: "Desenvolvimento Frontend",
+    title: "Desenvolvimento Web & Interfaces",
     description:
-      "Construção de interfaces de utilizador interativas, modernas e responsivas utilizando React, Next.js e TailwindCSS.",
+      "Construção de aplicações web empresariais e interfaces modernas, responsivas e intuitivas utilizando JavaScript, Vue.js, React, HTML5 e CSS3.",
   },
   {
     id: "03",
-    title: "Desenvolvimento Mobile",
+    title: "Bases de Dados & Infraestrutura",
     description:
-      "Criação de aplicativos nativos de alta performance para Android e iOS com React Native e Expo.",
+      "Modelagem e otimização de bases de dados relacionais (MySQL/PostgreSQL), gestão de cache com Redis, contentorização com Docker e servidores Linux/Nginx.",
   },
   {
     id: "04",
-    title: "Garantia de Qualidade (QA)",
+    title: "Garantia de Qualidade & Automação (QA)",
     description:
-      "Execução de testes funcionais, manuais e testes de APIs com Postman para garantir a estabilidade e qualidade do código.",
+      "Testes de APIs, diagnóstico e resolução de bugs, implementação de pipelines CI/CD, automação de processos e documentação técnica de projetos.",
   },
 ];
 
