@@ -59,13 +59,13 @@ const projects: Project[] = [
   },
   {
     id: "5",
-    title: "Mpamba - Gestão Empresarial",
-    subtitle: "Web / Full Stack",
-    description: "Sistema personalizado de gestão para a empresa Graça Sobre Graça. Integração de módulos de tesouraria, faturação e operações financeiras com foco em eficiência e controlo.",
-    tags: ["React", "TypeScript", "Node.js", "Prisma", "TailwindCSS"],
+    title: "Twice Line — E-commerce",
+    subtitle: "Frontend / Web",
+    description: "Plataforma de e-commerce moderna para o mercado angolano. Desenvolvimento de interfaces responsivas, catálogo interativo de produtos, sistema de busca e galeria com Blade, Tailwind CSS e Alpine.js.",
+    tags: ["Frontend", "Tailwind CSS", "Alpine.js", "Blade", "Laravel"],
     category: "Web",
     image: "",
-    link: "https://mpamba2.vercel.app/signin",
+    link: "https://github.com/AntonioSebastiaoPedro/twice-line",
   },
   {
     id: "6",
