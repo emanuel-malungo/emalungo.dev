@@ -69,13 +69,13 @@ const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Kivemba",
-    subtitle: "Mobile / Finanças",
-    description: "Aplicativo móvel de gestão de faturamento para pequenas empresas e freelancers gerirem clientes, produtos e cobranças com autenticação, upload de arquivos e biometria.",
-    tags: ["React Native", "TypeScript"],
-    category: "Mobile",
+    title: "Sistema de Gestão Académica",
+    subtitle: "Backend / Full Stack",
+    description: "Sistema empresarial completo para gestão escolar e académica em Angola. Controlo de matrículas, pautas, exames, turmas, emissão de certificados em PDF (DomPDF) e gestão de licenças.",
+    tags: ["Laravel", "PHP", "MySQL", "DomPDF", "Blade"],
+    category: "Backend",
     image: "",
-    link: "#",
+    link: "https://github.com/AntonioSebastiaoPedro/basededados",
   },
 ];
 
