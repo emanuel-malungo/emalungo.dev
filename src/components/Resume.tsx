@@ -13,9 +13,9 @@ interface TimelineItem {
 const experienceItems: TimelineItem[] = [
   {
     id: "exp-1",
-    duration: "2025 - Presente",
-    title: "Desenvolvedor Full Stack Freelancer",
-    subtitle: "Projetos Independentes (TRIMID, Mpamba)",
+    duration: "2024 - Presente",
+    title: "Desenvolvedor Freelancer",
+    subtitle: "Projetos autónomos atuando em Frontend, Backend e Full Stack (TRIMID, Mpamba e outros)",
   },
   {
     id: "exp-2",
@@ -34,9 +34,9 @@ const educationItems: TimelineItem[] = [
   },
   {
     id: "edu-2",
-    duration: "2021 - 2023",
-    title: "Especialização em Desenvolvimento & QA",
-    subtitle: "Estudos Independentes, Bootcamps",
+    duration: "2020 - 2023",
+    title: "Técnico de Informática",
+    subtitle: "Instituto Politécnico Privado Professora Maria Osvalda (Rede Anuarite), Luanda",
   },
 ];
 
