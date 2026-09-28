@@ -79,7 +79,6 @@ const projects: Project[] = [
   },
 ];
 
-const categories = ["Todos", "Web", "Mobile", "Backend"];
 
 export default function Works() {
   const [activeCategory, setActiveCategory] = useState("Todos");
@@ -108,35 +107,8 @@ export default function Works() {
           </p>
         </div>
 
-        {/* Categories Tab Filter */}
-        <div className="flex justify-center mb-16">
-          <div className="flex items-center gap-1 sm:gap-2 p-1.5 bg-dark-card border border-accent-purple/10 rounded-full">
-            {categories.map((category) => {
-              const isActive = activeCategory === category;
-              return (
-                <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
-                  className={`relative px-4 sm:px-6 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-full transition-colors duration-300 ${
-                    isActive ? "text-white" : "text-accent-light hover:text-white"
-                  }`}
-                >
-                  {category}
-                  {isActive && (
-                    <motion.span
-                      layoutId="activeTab"
-                      className="absolute inset-0 bg-accent-purple rounded-full -z-10 shadow-[0_0_12px_rgba(135,80,247,0.4)]"
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                    />
-                  )}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
         {/* Project Grid */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project) => (
               <motion.a
@@ -149,15 +121,15 @@ export default function Works() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
                 key={project.id}
-                className="group relative bg-dark-card border border-accent-purple/10 rounded-3xl overflow-hidden shadow-lg flex flex-col justify-between block hover:border-accent-purple/30 hover:shadow-[0_0_20px_rgba(135,80,247,0.1)] transition-all duration-300"
+                className="group relative bg-dark-card border border-accent-purple/10 rounded-md overflow-hidden shadow-lg flex flex-col justify-between block hover:border-accent-purple/30 hover:shadow-[0_0_20px_rgba(135,80,247,0.1)] transition-all duration-300"
               >
                 {/* Background purple glow on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-accent-purple/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 pointer-events-none" />
 
                 {/* Info Text */}
-                <div className="relative z-10 p-6 sm:p-8 flex-1 flex flex-col justify-between">
+                <div className="relative z-10 p-5 sm:p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <div className="flex justify-between items-start mb-4">
+                    <div className="flex justify-between items-start mb-3">
                       <span className="text-xs font-semibold text-accent-purple tracking-wider uppercase">
                         {project.subtitle}
                       </span>
@@ -165,21 +137,21 @@ export default function Works() {
                         <ArrowUpRight className="w-4 h-4" />
                       </div>
                     </div>
-                    <h3 className="text-xl font-bold text-white group-hover:text-accent-purple transition-colors duration-300 mb-3">
+                    <h3 className="text-lg font-bold text-white group-hover:text-accent-purple transition-colors duration-300 mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-accent-light leading-relaxed mb-6">
+                    <p className="text-xs sm:text-sm text-accent-light leading-relaxed mb-5">
                       {project.description}
                     </p>
                   </div>
                   
                   {/* Tech Tags */}
                   <div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1.5">
                       {project.tags.map((tag) => (
                         <span 
                           key={tag} 
-                          className="text-xs px-2.5 py-1 bg-accent-purple/10 border border-accent-purple/20 text-accent-purple rounded-md font-medium"
+                          className="text-[11px] px-2 py-0.5 bg-accent-purple/10 border border-accent-purple/20 text-accent-purple rounded-md font-medium"
                         >
                           {tag}
                         </span>
