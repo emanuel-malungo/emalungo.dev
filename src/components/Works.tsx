@@ -69,13 +69,13 @@ const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Sistema de Gestão Académica",
+    title: "SGETI — Gestão Escolar (INFQE)",
     subtitle: "Backend / Full Stack",
-    description: "Sistema empresarial completo para gestão escolar e académica em Angola. Controlo de matrículas, pautas, exames, turmas, emissão de certificados em PDF (DomPDF) e gestão de licenças.",
+    description: "Sistema empresarial completo de gestão escolar para instituições do II Ciclo em Angola. Controlo de matrículas, pautas, exames, turmas, emissão de certificados em PDF (DomPDF) e licenças.",
     tags: ["Laravel", "PHP", "MySQL", "DomPDF", "Blade"],
     category: "Backend",
     image: "",
-    link: "https://github.com/AntonioSebastiaoPedro/basededados",
+    link: "https://prod.escola.shopall.ao/admin",
   },
 ];
 
